@@ -1,11 +1,11 @@
 // blur header
+
 const blurHeader = ()=>{
     const header = document.getElementById('header')
     this.scrollY >= 50 ? header.classList.add('blur-header'):header.classList.remove('blur-header')
 
 }
 window.addEventListener('scroll',blurHeader)
-
 /*=============== REMOVE MENU MOBILE ===============*/
 const navLink = document.querySelectorAll('#menu-toggler ul a')
 const linkAction =()=>{
