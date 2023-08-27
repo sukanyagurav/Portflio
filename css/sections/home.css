@@ -47,7 +47,7 @@
   
     content: '';
     position: absolute;
-    inset:-55px;
+    inset:-51px;
     border:4px solid transparent;
     border-left: 4px solid var(--secondary-color);  
     border-right: 4px solid var(--secondary-color); 
@@ -139,5 +139,10 @@
         padding: 50px 20px;
         text-align: left;
     }
-    
+    .downloadCV::before{
+        inset:-60px;
+    }
+    .downloadCV::after{
+        inset:-30px;
+    }
 }
