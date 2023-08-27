@@ -6,8 +6,8 @@
     justify-content: center;
     position: relative;
     gap:7rem;
-    margin-block:9rem;
-    /* margin-bottom: 5rem; */
+    padding-top:9rem;
+    padding-bottom: 4rem;
     max-width: 1280px;
     margin-inline: auto;
 }
@@ -132,10 +132,7 @@
 @media(min-width:840px){
     .hero{
         flex-direction: row; 
-        padding:2rem; 
         gap:2rem;
-        /* margin-top: 3rem; */
-        
     }
     .hero-content{
         padding: 50px 20px;

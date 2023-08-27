@@ -1,18 +1,22 @@
-// blur header
 
-const blurHeader = ()=>{
-    const header = document.getElementById('header')
-    this.scrollY >= 50 ? header.classList.add('blur-header'):header.classList.remove('blur-header')
-
-}
-window.addEventListener('scroll',blurHeader)
 /*=============== REMOVE MENU MOBILE ===============*/
 const navLink = document.querySelectorAll('#menu-toggler ul a')
 const linkAction =()=>{
     document.querySelector('.menu-checkbox').checked=false
 }
 navLink.forEach(n=>n.addEventListener('click',linkAction))
+// blur header
+const blurHeader = ()=>{
+    const header = document.getElementById('header')
+    if(this.scrollY >=50){
+        header.classList.add('blur-header')
+    }
+    else{
+        header.classList.remove('blur-header');
+    }
+}
 
+window.addEventListener('scroll',blurHeader)
 let tl = gsap.timeline({defaults: {ease: "power4.inOut"}})
 let points = CSSRulePlugin.getRule(".divider::before")
 tl.to('.name',{'clip-path': 'polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%)',opacity:1,y:0,duration:0.7})
@@ -64,6 +68,3 @@ tl4.to('.heading--3',{'clip-path': 'polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%)'
 .to('.project-title',{'clip-path': 'polygon(0 0, 0 100%, 100% 100%, 100% 0%)',duration:1.3})
 .to('.project-description',{'clip-path': 'polygon(0 0, 0 100%, 100% 100%, 100% 0%)',duration:0.9},"-=1")
 .to('.project-technology',{'clip-path': 'polygon(0 0, 0 100%, 100% 100%, 100% 0%)',delay:1,duration:0.6},"-=1")
-document.querySelector('.downloadCV').addEventListener('click',function(){
-    window.location.href=new URL('/Sukanya Gurav Resume.pdf', import.meta.url).href
-})

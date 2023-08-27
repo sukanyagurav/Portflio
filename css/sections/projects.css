@@ -1,8 +1,7 @@
 .projects{
     max-width: 1280px;
-    margin:3rem 0;
     margin-inline: auto;
-    padding:2rem;
+    padding:3rem 2rem;
    
 }
 .project-details-container{
