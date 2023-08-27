@@ -17,6 +17,27 @@ const blurHeader = ()=>{
 }
 
 window.addEventListener('scroll',blurHeader)
+// Get all sections that have an ID defined
+const sections = document.querySelectorAll("section[id]");
+
+window.addEventListener("scroll", activeLink);
+function activeLink(){
+    const scrollY = window.pageYOffset
+    sections.forEach(current=>{
+        const sectionHeight= current.offsetHeight,
+        sectionTop= current.offsetTop- 58,
+        
+        sectionId=current.getAttribute('id'),
+        sectionClass=document.querySelector('#menu-toggler  a[href*='+sectionId + ']')
+       console.log(sectionTop)
+        if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
+            sectionClass.classList.add('active-link')
+        }
+        else{
+            sectionClass.classList.remove('active-link')
+        }
+    })
+}
 let tl = gsap.timeline({defaults: {ease: "power4.inOut"}})
 let points = CSSRulePlugin.getRule(".divider::before")
 tl.to('.name',{'clip-path': 'polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%)',opacity:1,y:0,duration:0.7})
