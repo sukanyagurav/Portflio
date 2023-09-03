@@ -47,7 +47,7 @@
   
     content: '';
     position: absolute;
-    inset:-51px;
+    inset:-49px;
     border:4px solid transparent;
     border-left: 4px solid var(--secondary-color);  
     border-right: 4px solid var(--secondary-color); 
@@ -59,7 +59,7 @@
   
     content: '';
     position: absolute;
-    inset:-25px;
+    inset:-22px;
     border:4px solid transparent;
     border-left: 4px solid var(--secondary-color);  
     border-right: 4px solid var(--secondary-color); 
