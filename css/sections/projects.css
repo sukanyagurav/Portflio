@@ -43,17 +43,11 @@
     padding: 0.5rem;
     padding: 1rem;
 }
-/* button[disabled]{
-    background-color: grey;
-} */
-.active{
-
-}
 .wrapper .carousel{
     display: grid;
     grid-auto-flow: column;
-    grid-auto-columns: 100%;
-    gap:16px;
+    /* grid-auto-columns: 103%; */
+    gap:28px;
     align-items: end;
     overflow-x: auto;
     scroll-snap-type:x mandatory;
@@ -72,7 +66,7 @@
     border-radius: 50%;
     color: var(--white);
     position: absolute;
-    top:55%;
+    top:50%;
     transform: translateY(-50%);
     z-index: 36;
     background-color: var(--secondary-color);
@@ -88,7 +82,7 @@
     left:-20px;
 }
 .wrapper button:last-child{
-    right:-20px;
+    right:-5px;
 }
 .carousel .card{
     scroll-snap-align:start;
@@ -102,6 +96,8 @@
   height: 100%;
   /* width: 35vw;
   height:30vw; */
+  width: 70vw;
+    height: 100%;
 }
 .carousel .buttons{
     position: absolute;
