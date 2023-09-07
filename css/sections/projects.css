@@ -37,7 +37,7 @@
     font-size: 0.95rem;
 }
 .wrapper{
-    /* max-width: 1300px; */
+    max-width: 1300px;
     width:100%;
     position: relative;
     padding: 1rem;
@@ -45,7 +45,9 @@
 .wrapper .carousel{
     display: grid;
     grid-auto-flow: column;
+    grid-auto-columns: 100%;
     gap:28px;
+    place-items: center;
     align-items: end;
     overflow-x: auto;
     scroll-snap-type:x mandatory;
@@ -87,18 +89,16 @@
     overflow:hidden;
    cursor: pointer;
    border-radius: 8px;
-   
     transition: 0.5s;
-    width: 70vw;
+    width: 100%;
     height: 100%;
-    margin-left:3rem;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 2px 4px 3px, rgba(0, 0, 0, 0.3) 0px 2px 4px 3px;
     
 }
 .carousel .buttons{
     position: absolute;
     z-index:10;
-    bottom:-100%;
+    bottom: -160%;
     width:100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.3);
@@ -108,13 +108,8 @@
     gap:2rem;
     transition: 0.5s;
     border-radius: 8px;
+}
 
-}
-.card:hover{
-    box-shadow: rgba(15,197,176) 0px 3px 6px, rgba(15,197,176) 0px 3px 6px,
-    rgba(15,197,176) 0px 3px 6px;
-    box-shadow: rgba(15,197,176) 0px 2px 4px 6px, rgba(15,197,176) 0px 2px 16px 6px;
-}
 .card:hover  .buttons{
     bottom:0%;
 }
