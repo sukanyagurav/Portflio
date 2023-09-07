@@ -37,22 +37,20 @@
     font-size: 0.95rem;
 }
 .wrapper{
-    max-width: 1300px;
+    /* max-width: 1300px; */
     width:100%;
     position: relative;
-    padding: 0.5rem;
     padding: 1rem;
 }
 .wrapper .carousel{
     display: grid;
     grid-auto-flow: column;
-    /* grid-auto-columns: 103%; */
     gap:28px;
     align-items: end;
     overflow-x: auto;
     scroll-snap-type:x mandatory;
     scrollbar-width:none;
-    padding:1rem ;
+    padding:1rem;
     scroll-behavior: smooth;
 }
 .carousel::-webkit-scrollbar{
@@ -70,7 +68,6 @@
     transform: translateY(-50%);
     z-index: 36;
     background-color: var(--secondary-color);
-    
     width: 48px;
     height: 48px;
     display: flex;
@@ -90,14 +87,13 @@
     overflow:hidden;
    cursor: pointer;
    border-radius: 8px;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+   
     transition: 0.5s;
-  width: 100%;
-  height: 100%;
-  /* width: 35vw;
-  height:30vw; */
-  width: 70vw;
+    width: 70vw;
     height: 100%;
+    margin-left:3rem;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 2px 4px 3px, rgba(0, 0, 0, 0.3) 0px 2px 4px 3px;
+    
 }
 .carousel .buttons{
     position: absolute;
@@ -115,7 +111,9 @@
 
 }
 .card:hover{
-    box-shadow: rgba(15,197,176) 0px 3px 6px, rgba(15,197,176) 0px 3px 6px;
+    box-shadow: rgba(15,197,176) 0px 3px 6px, rgba(15,197,176) 0px 3px 6px,
+    rgba(15,197,176) 0px 3px 6px;
+    box-shadow: rgba(15,197,176) 0px 2px 4px 6px, rgba(15,197,176) 0px 2px 16px 6px;
 }
 .card:hover  .buttons{
     bottom:0%;
@@ -166,12 +164,12 @@
 }
 @media screen and (min-width:900px){
     .wrapper .carousel{
-        grid-auto-columns: calc((100% / 3) - 25px);
+        grid-auto-columns: calc((100% / 3) - 20px);
     }
    
     .carousel .card{
         width:25vw;
-        height:18vw;
+        height:20vw;
     }
     
 }
