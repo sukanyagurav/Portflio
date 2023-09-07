@@ -55,11 +55,15 @@
     grid-auto-columns: 100%;
     gap:16px;
     align-items: end;
-    overflow: hidden;
+    overflow-x: auto;
+    scroll-snap-type:x mandatory;
+    scrollbar-width:none;
     padding:1rem ;
     scroll-behavior: smooth;
 }
-
+.carousel::-webkit-scrollbar{
+    display: none;
+}
 .wrapper button{
     border:none;
     cursor:pointer;
@@ -87,6 +91,7 @@
     right:-20px;
 }
 .carousel .card{
+    scroll-snap-align:start;
     position: relative;
     overflow:hidden;
    cursor: pointer;
@@ -95,7 +100,8 @@
     transition: 0.5s;
   width: 100%;
   height: 100%;
-
+  /* width: 35vw;
+  height:30vw; */
 }
 .carousel .buttons{
     position: absolute;
@@ -151,9 +157,6 @@
     .wrapper .carousel{
         grid-auto-columns: calc((100% / 2) - 5px);
     }
-    /* .wrapper .carousel{
-        column-gap:16px;
-    } */
     .carousel .card{
      width: 35vw;
      height:30vw;
