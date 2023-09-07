@@ -29,7 +29,6 @@ function activeLink(){
         
         sectionId=current.getAttribute('id'),
         sectionClass=document.querySelector('#menu-toggler  a[href*='+sectionId + ']')
-       console.log(sectionTop)
         if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
             sectionClass.classList.add('active-link')
         }
@@ -38,6 +37,24 @@ function activeLink(){
         }
     })
 }
+//carousel 
+const carousel=document.querySelector('.carousel')
+const arrowBtn=document.querySelectorAll('.arrowBtn')
+const firstCardWidth =carousel.querySelector('.card').offsetWidth;
+arrowBtn.forEach(btn=>{
+    btn.addEventListener('click',()=>{
+        carousel.scrollLeft+= btn.id ==='left' ? -firstCardWidth : firstCardWidth
+
+    //     if(carousel.scrollLeft == 0){
+    //     document.querySelectorAll('.arrowBtn #left').disabled = true
+    // }
+    // else if(carousel.scrollLeft == (carousel.scrollWidth - carousel.offsetWidth)){
+    //     document.querySelectorAll('.arrowBtn #right').disabled =true
+    // }
+    })
+    
+})
+// animation
 let tl = gsap.timeline({defaults: {ease: "power4.inOut"}})
 let points = CSSRulePlugin.getRule(".divider::before")
 tl.to('.name',{'clip-path': 'polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%)',opacity:1,y:0,duration:0.7})
