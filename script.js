@@ -44,16 +44,13 @@ const firstCardWidth =carousel.querySelector('.card').offsetWidth;
 arrowBtn.forEach(btn=>{
     btn.addEventListener('click',()=>{
         carousel.scrollLeft+= btn.id ===  'left' ? -firstCardWidth : firstCardWidth
-
-    //     if(carousel.scrollLeft == 0){
-    //     document.querySelectorAll('.arrowBtn #left').disabled = true
-    // }
-    // else if(carousel.scrollLeft == (carousel.scrollWidth - carousel.offsetWidth)){
-    //     document.querySelectorAll('.arrowBtn #right').disabled =true
-    // }
+       
     })
     
+    
 })
+
+
 // animation
 let tl = gsap.timeline({defaults: {ease: "power4.inOut"}})
 let points = CSSRulePlugin.getRule(".divider::before")
