@@ -134,6 +134,7 @@
     .hero{
         flex-direction: row; 
         gap:2rem;
+        margin-bottom: 2rem;
     }
     .hero-content{
         padding: 50px 20px;
