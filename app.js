@@ -1,10 +1,11 @@
-import data from './projectsData.js';
+import data from '.projectsData.js';
 const loadMore = document.querySelector('.load-more')
 
 console.log(data)
 let curr= 0
 function createProject(newData){
     const main = document.querySelector('.project-container')
+    // let newData = data.slice(curr,curr+3)
     const articles= newData.map(project=>{
             return `<article class="card" >
                             <img src="${project.imageUrl}" alt="" class="card_image">
