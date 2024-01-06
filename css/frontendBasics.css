@@ -2,7 +2,9 @@
 
 .header-container{
     color:var(--secondary-color);
-    /* border-bottom: var(--secondary-color) 1px solid; */
+}
+.back:hover{
+    color:var(--secondary-color);
 }
 main{
     padding:1.5rem 1.5rem;
@@ -19,6 +21,7 @@ main{
     gap:2rem;
     color:var(--secondary-color);
     font-size: 2rem;
+    margin-top:1.5rem;
 }
 .card{
     height:330px ;
