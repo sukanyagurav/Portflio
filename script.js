@@ -84,12 +84,7 @@ let tl3=gsap.timeline({
     },
 })
 tl3.to('.skills-title',{'clip-path': 'polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%)',opacity:1,duration:0.5,y:0})
-.from('.skill-1',{scale:0,duration:0.2})
-.from('.skill-2',{scale:0,delay:0.05,duration:0.3})
-.from('.skill-3',{scale:0,delay:0.05,duration:0.3})
-.from('.skill-4',{scale:0,delay:0.05,duration:0.3})
-.from('.skill-5',{scale:0,delay:0.05,duration:0.3})
-.from('.skill-6',{scale:0,delay:0.05,duration:0.3})
+
 
 let tl4=gsap.timeline({
     scrollTrigger:{
@@ -103,3 +98,4 @@ tl4.to('.heading--3',{'clip-path': 'polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%)'
 .to('.project-title',{'clip-path': 'polygon(0 0, 0 100%, 100% 100%, 100% 0%)',duration:1.3})
 .to('.project-description',{'clip-path': 'polygon(0 0, 0 100%, 100% 100%, 100% 0%)',duration:0.9},"-=1")
 .to('.project-technology',{'clip-path': 'polygon(0 0, 0 100%, 100% 100%, 100% 0%)',delay:1,duration:0.6},"-=1")
+
