@@ -1,4 +1,4 @@
-import data from '.projectsData.js';
+import data from './projectsData.js';
 const loadMore = document.querySelector('.load-more')
 
 console.log(data)
