@@ -62,29 +62,23 @@ export default [
         liveLink:'https://sukanyagurav.github.io/interactive-rating-component-main/',
         githubLink:'https://github.com/sukanyagurav/interactive-rating-component-main/tree/master'
     },
+   
     {
         id:10,
-        name:'interactive pricing component main',
-        imageUrl:'./src/img/Projects/interactive-pricing-component-main.jpg',
-        liveLink:'https://sukanyagurav.github.io/interactive-pricing-component-main/',
-        githubLink:'https://github.com/sukanyagurav/interactive-pricing-component-main'
-    },
-    {
-        id:11,
         name:'pricing component with toggle master',
         imageUrl:'./src/img/Projects/pricing-component-with-toggle-master.jpg',
         liveLink:'https://sukanyagurav.github.io/pricing-component-with-toggle-master/',
         githubLink:'https://github.com/sukanyagurav/pricing-component-with-toggle-master'
     },
     {
-        id:12,
+        id:11,
         name:'testimonials grid section main',
         imageUrl:'./src/img/Projects/testimonials-grid-section-main.jpg',
         liveLink:'https://sukanyagurav.github.io/testimonials-grid-section-main/',
         githubLink:'https://github.com/sukanyagurav/testimonials-grid-section-main/tree/master'
     },
     {
-        id:13,
+        id:12,
         name:'news homepage main',
         imageUrl:'./src/img/Projects/news-homepage-main.jpg',
         liveLink:'https://sukanyagurav.github.io/news-homepage-main/',
@@ -92,14 +86,14 @@ export default [
     },
 
     {
-        id:14,
+        id:13,
         name:'social proof section master',
         imageUrl:'./src/img/Projects/social-proof-section-master.jpg',
         liveLink:'https://sukanyagurav.github.io/social-proof-section-master/',
         githubLink:'https://github.com/sukanyagurav/social-proof-section-master/tree/master'
     },
     {
-        id:15,
+        id:14,
         name:'results summary component main',
         imageUrl:'./src/img/Projects/results-summary-component-main.jpg',
         liveLink:'https://sukanyagurav.github.io/results-summary-component-main/',
@@ -107,14 +101,14 @@ export default [
     },
     
     {
-        id:16,
+        id:15,
         name:'fylo data storage component master',
         imageUrl:'./src/img/Projects/Project 7.jpg',
         liveLink:'https://sukanyagurav.github.io/fylo-data-storage-component-master/',
         githubLink:'https://github.com/sukanyagurav/fylo-data-storage-component-master/tree/master'
     },
     {
-        id:17,
+        id:16,
         name:'game landing page',
         imageUrl:'./src/img/Projects/game landing page.JPG',
         liveLink:'https://sukanyagurav.github.io/game-landing-page/',
