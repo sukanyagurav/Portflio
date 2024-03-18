@@ -71,7 +71,7 @@ tl2.to('.summary',{'height':'auto',opacity:1,duration:1})
 .to('.summary .title',{'clip-path': 'polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%)',opacity:1,duration:1,y:0})
 .from(points,{opacity:0,transform:'translateY(100px)'})
 .to('.event',{'height':'auto',opacity:1,duration:1,y:0,delay:0.3},"-=3")
-.to('.date, .company, .university, .profession',{'clip-path': 'polygon(0 0, 0 100%, 100% 100%, 100% 0%)',delay:0.3,duration:1},"-=2")
+.to('.date, .company, .university, .profession',{'clip-path': 'polygon(0 0, 0 100%, 100% 100%, 100% 0%)',duration:1},"-=2")
 .from('.divider',{scaleY:0,duration:1},"-=1")
 
 
@@ -83,7 +83,7 @@ let tl3=gsap.timeline({
         // toggleActions:"restart none none reverse"
     },
 })
-tl3.to('.skills-title',{'clip-path': 'polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%)',opacity:1,duration:0.5,y:0})
+tl3.to('.skills-title',{'clip-path': 'polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%)',opacity:1,duration:1,y:0})
 
 
 let tl4=gsap.timeline({

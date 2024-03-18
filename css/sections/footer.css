@@ -13,9 +13,9 @@ footer{
 }
 a{
     transition: transform 0.5s ease-in-out;
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
 }
 
 a i{
