@@ -46,7 +46,7 @@
     display: grid;
     grid-auto-flow: column;
     grid-auto-columns: 100%;
-    gap:2rem;
+    gap:1rem;
     place-items: center;
     align-items: end;
     overflow-x: auto;
@@ -55,6 +55,7 @@
     padding:1rem;
     scroll-behavior: smooth;
 }
+
 .carousel::-webkit-scrollbar{
     display: none;
 }
