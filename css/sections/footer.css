@@ -13,11 +13,25 @@ footer{
 }
 a{
     transition: transform 0.5s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 a i{
     color:var(--secondary-color);
     font-size: 2rem;
 }
+a svg{
+    background-color: var(--secondary-color);
+    border-radius: 50%;
+}
+
+/* a img{
+    color: #9adcd5;
+    filter: brightness(0) saturate(100%) invert(53%) sepia(100%) saturate(341%) hue-rotate(124deg) brightness(85%) contrast(106%);
+   
+} */
 @media(hover:hover){
     a:hover {
         transform: scale(1.1);

@@ -1,4 +1,5 @@
 export default [
+    
     {
         id:1,
         name:'expenses chart component main',
@@ -27,6 +28,7 @@ export default [
         liveLink:'https://sukanyagurav.github.io/Notifications-page/',
         githubLink:'https://github.com/sukanyagurav/Notifications-page'
     },
+
     {
         id:5,
         name:'interactive card details form main',
@@ -43,20 +45,28 @@ export default [
     },
     {
         id:7,
+        name:'Coding bootcamp testimonials slider',
+        imageUrl:'./src/img/Projects/carousel.jpg',
+        liveLink:'https://sukanyagurav.github.io/coding-bootcamp-testimonials-slider-master/',
+        githubLink:'https://github.com/sukanyagurav/coding-bootcamp-testimonials-slider-master'
+
+    },
+    {
+        id:8,
         name:'Sunnyside agency landing page',
         imageUrl:'./src/img/Projects/sunnyside-agency-landing-page-main.jpg',
         liveLink:'https://sukanyagurav.github.io/Sunnyside-agency-landing-page/',
         githubLink:'https://github.com/sukanyagurav/Sunnyside-agency-landing-page'
     },
     {
-        id:8,
+        id:9,
         name:'intro section with dropdown navigation main',
         imageUrl:'./src/img/Projects/intro-section-with-dropdown-navigation-main.jpg',
         liveLink:'https://sukanyagurav.github.io/Intro-section-with-dropdown-navigation/',
         githubLink:'https://github.com/sukanyagurav/Intro-section-with-dropdown-navigation'
     },
     {
-        id:9,
+        id:10,
         name:'interactive rating component main',
         imageUrl:'./src/img/Projects/interactive-rating-component-main.jpg',
         liveLink:'https://sukanyagurav.github.io/interactive-rating-component-main/',
@@ -64,21 +74,21 @@ export default [
     },
    
     {
-        id:10,
+        id:11,
         name:'pricing component with toggle master',
         imageUrl:'./src/img/Projects/pricing-component-with-toggle-master.jpg',
         liveLink:'https://sukanyagurav.github.io/pricing-component-with-toggle-master/',
         githubLink:'https://github.com/sukanyagurav/pricing-component-with-toggle-master'
     },
     {
-        id:11,
+        id:12,
         name:'testimonials grid section main',
         imageUrl:'./src/img/Projects/testimonials-grid-section-main.jpg',
         liveLink:'https://sukanyagurav.github.io/testimonials-grid-section-main/',
         githubLink:'https://github.com/sukanyagurav/testimonials-grid-section-main/tree/master'
     },
     {
-        id:12,
+        id:13,
         name:'news homepage main',
         imageUrl:'./src/img/Projects/news-homepage-main.jpg',
         liveLink:'https://sukanyagurav.github.io/news-homepage-main/',
@@ -86,14 +96,14 @@ export default [
     },
 
     {
-        id:13,
+        id:14,
         name:'social proof section master',
         imageUrl:'./src/img/Projects/social-proof-section-master.jpg',
         liveLink:'https://sukanyagurav.github.io/social-proof-section-master/',
         githubLink:'https://github.com/sukanyagurav/social-proof-section-master/tree/master'
     },
     {
-        id:14,
+        id:15,
         name:'results summary component main',
         imageUrl:'./src/img/Projects/results-summary-component-main.jpg',
         liveLink:'https://sukanyagurav.github.io/results-summary-component-main/',
@@ -101,14 +111,14 @@ export default [
     },
     
     {
-        id:15,
+        id:16,
         name:'fylo data storage component master',
         imageUrl:'./src/img/Projects/Project 7.jpg',
         liveLink:'https://sukanyagurav.github.io/fylo-data-storage-component-master/',
         githubLink:'https://github.com/sukanyagurav/fylo-data-storage-component-master/tree/master'
     },
     {
-        id:16,
+        id:17,
         name:'game landing page',
         imageUrl:'./src/img/Projects/game landing page.JPG',
         liveLink:'https://sukanyagurav.github.io/game-landing-page/',

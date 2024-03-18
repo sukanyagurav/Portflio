@@ -54,8 +54,8 @@ arrowBtn.forEach(btn=>{
 // animation
 let tl = gsap.timeline({defaults: {ease: "power4.inOut"}})
 let points = CSSRulePlugin.getRule(".divider::before")
-tl.to('.name',{'clip-path': 'polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%)',opacity:1,y:0,duration:0.7})
-.to('.text',{'clip-path': 'polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%)',opacity:1,y:0,duration:0.9})
+tl.to('.name',{'clip-path': 'polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%)',opacity:1,y:0,duration:0.5})
+.to('.text',{'clip-path': 'polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%)',opacity:1,y:0,duration:0.7})
 .to('.downloadCV',{opacity:1,scale:1,duration:0.9},"-=1")
 let tl2=gsap.timeline({
     scrollTrigger:{
@@ -64,15 +64,15 @@ let tl2=gsap.timeline({
         start:"top 70%",
         end:'bottom 2%',
         ease:Expo.easeInOut,
-     toggleActions:"restart none none reverse"
+    //    toggleActions:"restart none none reverse"
     },
 })
-tl2.to('.summary',{'height':'auto',opacity:1,duration:0.8})
-.to('.summary .title',{'clip-path': 'polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%)',opacity:1,duration:0.5,y:0})
+tl2.to('.summary',{'height':'auto',opacity:1,duration:1})
+.to('.summary .title',{'clip-path': 'polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%)',opacity:1,duration:1,y:0})
 .from(points,{opacity:0,transform:'translateY(100px)'})
-.to('.event',{'height':'auto',opacity:1,duration:0.9,y:0,delay:0.5},"-=3")
-.to('.date, .company, .university, .profession',{'clip-path': 'polygon(0 0, 0 100%, 100% 100%, 100% 0%)',delay:0.9,duration:0.9},"-=2")
-.from('.divider',{scaleY:0,duration:"0.6"},"-=1")
+.to('.event',{'height':'auto',opacity:1,duration:1,y:0,delay:0.3},"-=3")
+.to('.date, .company, .university, .profession',{'clip-path': 'polygon(0 0, 0 100%, 100% 100%, 100% 0%)',delay:0.3,duration:1},"-=2")
+.from('.divider',{scaleY:0,duration:1},"-=1")
 
 
 let tl3=gsap.timeline({
@@ -80,7 +80,7 @@ let tl3=gsap.timeline({
         trigger:'.skills',
         start:"top 50%",
         end:"bottom 10px",
-        toggleActions:"restart none none reverse"
+        // toggleActions:"restart none none reverse"
     },
 })
 tl3.to('.skills-title',{'clip-path': 'polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%)',opacity:1,duration:0.5,y:0})
@@ -91,7 +91,7 @@ let tl4=gsap.timeline({
         trigger:'.projects',
         start:"top 50%",
         end:"bottom 50px",
-        toggleActions:"restart none none reverse"
+        // toggleActions:"restart none none reverse"
     },
 })
 tl4.to('.heading--3',{'clip-path': 'polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%)',opacity:1,y:0,duration:0.4})
