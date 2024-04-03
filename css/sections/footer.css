@@ -20,19 +20,17 @@ a i{
     font-size: 2rem;
 }
 a svg{
-    background-color: var(--secondary-color);
+    /* background-color: var(--secondary-color); */
     border-radius: 50%;
 }
 
 
 @media(hover:hover){
-    a:hover {
+    footer a:hover {
         transform: scale(1.1);
     }
 }
-a:active{
-    
-}
+
 footer p{
     margin-top: 1rem;
 }

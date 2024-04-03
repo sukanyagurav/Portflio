@@ -1,52 +1,21 @@
 .projects{
-    max-width: 1280px;
+    /* max-width: 1300px; */
     margin-inline: auto;
     padding:4rem 1.5rem 3rem;
 }
-.project-details-container{
-    flex:1;
-}
-.project-details-container{
-    max-width: 600px;
-    width: 100%;
-}
-.project-description{
-    line-height: 1.7;
-    letter-spacing: 1px;
-    font-size: clamp(0.9rem,1rem + 5vw,1rem);
-    clip-path: polygon(0% 0%, 0 100%, 0 100%, 0% 0%);
-}
 
-.project-title{
-    font-size: 1.5rem;
-    color: var(--secondary-color);
-    margin-bottom: 1rem;
-    clip-path: polygon(0% 0%, 0 100%, 0 100%, 0% 0%);
-}
-.project-technology{
-    display: flex;
-    flex-wrap: wrap;
-    gap:1rem;
-    margin-top: 1rem;
-    clip-path: polygon(0% 0%, 0 100%, 0 100%, 0% 0%);
-}
-.technology{
-    padding: 0.8rem 1rem;
-    background-color: var(--primary-color);
-    border-radius: 30px;
-    font-size: 0.95rem;
-}
 .wrapper{
-    max-width: 1300px;
+    /* max-width: 1300px; */
     width:100%;
     position: relative;
     padding: 1rem;
 }
+
 .wrapper .carousel{
     display: grid;
     grid-auto-flow: column;
     grid-auto-columns: 100%;
-    gap:1rem;
+    gap:1.4rem;
     place-items: center;
     align-items: end;
     overflow-x: auto;
@@ -54,6 +23,7 @@
     scrollbar-width:none;
     padding:1rem;
     scroll-behavior: smooth;
+    width: 100%;
 }
 
 .carousel::-webkit-scrollbar{
@@ -112,10 +82,7 @@
 
 
 @media screen and (min-width:840px){
-    /* .carousel .card{
-        max-width: 700px;
-        min-height: 300px;
-    } */
+
     .projects{
         padding-inline: 3rem;
         flex-direction: row;

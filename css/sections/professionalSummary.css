@@ -3,7 +3,6 @@
     padding:8rem 1rem;
     height: 0;
     opacity: 0;
-    background-color: var(--primary-color);
 }
 .container{
     display: flex;
@@ -41,7 +40,7 @@ article{
     opacity: 0;
 }
 .event::before{
-    background-color: var(--secondary-color);
+    background-color:var(--secondary-color-3);
     width:20px;
     height: 100%;
     content:'';
@@ -105,7 +104,7 @@ h2{
         content: '';
         border-radius: 100%;
         border: .5em solid var(--bg-color);
-        background: var(--secondary-color);
+        background: var(--secondary-color-3);
         width: .5em;
         height: .5em;
         top: 0;
