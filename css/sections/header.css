@@ -104,7 +104,7 @@ nav{
     .hamburger::after{
         width: 2rem;
         height: 3px;
-        background-color:var(--secondary-color);
+        background-color:var(--secondary-color-2);
         display: inline-block;
     }
     .hamburger::before,
