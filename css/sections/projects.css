@@ -1,6 +1,4 @@
 .projects{
-    /* max-width: 1300px;
-    margin-inline: auto; */
     padding:4rem 1rem 3rem;
 }
 
@@ -8,7 +6,7 @@
     /* max-width: 1300px; */
     width:100%;
     position: relative;
-    padding: 1rem;
+
 }
 
 .wrapper .carousel{
@@ -81,27 +79,12 @@
 }
 
 
-@media screen and (min-width:840px){
-
-    .projects{
-        padding-inline: 3rem;
-        flex-direction: row;
-    }
-    /* .project-technology{
-        display: flex;
-        gap:1rem;
-        margin-top: 1rem;
-    }
-    .technology{
-        padding: 0.8rem 1.2rem;
-        background-color: var(--primary-color);
-        border-radius: 30px;
-    } */
-}
-
 @media screen and (min-width:650px){
     .wrapper .carousel{
         grid-auto-columns: calc((100% / 2) - 15px);
+    }
+    .wrapper button{
+        display: block;
     }
     .wrapper button:first-child{
         left:-15px;
