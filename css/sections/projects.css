@@ -1,7 +1,7 @@
 .projects{
-    /* max-width: 1300px; */
-    margin-inline: auto;
-    padding:4rem 1.5rem 3rem;
+    /* max-width: 1300px;
+    margin-inline: auto; */
+    padding:4rem 1rem 3rem;
 }
 
 .wrapper{
@@ -87,7 +87,7 @@
         padding-inline: 3rem;
         flex-direction: row;
     }
-    .project-technology{
+    /* .project-technology{
         display: flex;
         gap:1rem;
         margin-top: 1rem;
@@ -96,22 +96,22 @@
         padding: 0.8rem 1.2rem;
         background-color: var(--primary-color);
         border-radius: 30px;
-    }
+    } */
 }
 
 @media screen and (min-width:650px){
     .wrapper .carousel{
-        grid-auto-columns: calc((100% / 2) - 5px);
+        grid-auto-columns: calc((100% / 2) - 15px);
     }
     .wrapper button:first-child{
-    left:-18px;
+        left:-15px;
     }
     .wrapper button:last-child{
-    right:-18px;
+    right:-15px;
     }
 }
 @media screen and (min-width:900px){
     .wrapper .carousel{
-        grid-auto-columns: calc((100% / 3) - 20px);
+        grid-auto-columns: calc((100% / 3) - 20px );
     }
 }
