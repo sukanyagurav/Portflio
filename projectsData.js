@@ -167,6 +167,16 @@ export default [
     },
     {
         id:17,
+        name:'Insure landing page',
+        imageUrl:'./src/img/Projects/Insure landing page.jpg',
+        liveLink:'https://sukanyagurav.github.io/Frontend-Mentor---Insure-landing-page/',
+        githubLink:'https://github.com/sukanyagurav/Frontend-Mentor---Insure-landing-page',
+        technology:[
+            'HTML','CSS','Javascript'
+        ]
+    },
+    {
+        id:18,
         name:'Game landing page',
         imageUrl:'./src/img/Projects/game landing page.JPG',
         liveLink:'https://sukanyagurav.github.io/game-landing-page/',
