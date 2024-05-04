@@ -9,7 +9,15 @@
     position: relative;
 
 }
-
+.mainProjects{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
 .wrapper .carousel{
     display: grid;
     grid-auto-flow: column;
