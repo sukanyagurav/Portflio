@@ -1,37 +1,26 @@
 export default [
-    
-    {
-        id:1,
-        name:'Expenses chart component main',
-        imageUrl:'./src/img/Projects/expenses-chart-component-main.jpg',
-        liveLink:'https://sukanyagurav.github.io/expenses-chart-component-main/',
-        githubLink:'https://github.com/sukanyagurav/expenses-chart-component-main',
-        technology:[
-            'HTML','CSS','Javascript','Animation'
-        ]
-    },
-    {
-        id:2,
-        name:'FAQ accordion card main',
-        imageUrl:'./src/img/Projects/faq-accordion-card-main.jpg',
-        liveLink:'https://sukanyagurav.github.io/faq-accordion-card-main/',
-        githubLink:'https://github.com/sukanyagurav/faq-accordion-card-main/tree/master',
-        technology:[
-            'HTML','CSS','Javascript','Animation'
-        ]
-    },
-    {
-        id:3,
-        name:'Fylo dark theme landing page master',
-        imageUrl:'./src/img/Projects/fylo-dark-theme-landing-page-master.jpg',
-        liveLink:'https://sukanyagurav.github.io/fylo-dark-theme-landing-page-master/',
-        githubLink:'https://github.com/sukanyagurav/fylo-dark-theme-landing-page-master',
-        technology:[
-            'HTML','CSS','Javascript','Animation'
-        ]
-    },
     {
         id:4,
+        name:' FAQ accordion',
+        imageUrl:'./src/img/Projects/FAQ accordion.jpg',
+        liveLink:'https://sukanyagurav.github.io/Frontend-Mentor---FAQ-accordion/',
+        githubLink:'https://github.com/sukanyagurav/Frontend-Mentor---FAQ-accordion',
+        technology:[
+            'HTML','CSS','Javascript','Animation'
+        ]
+    },
+    {
+        id:5,
+        name:' Intro component with sign-up form',
+        imageUrl:'./src/img/Projects/Intro component with sign-up form.jpg',
+        liveLink:'https://sukanyagurav.github.io/intro-component-with-signup-form-master/',
+        githubLink:'https://github.com/sukanyagurav/intro-component-with-signup-form-master/tree/master',
+        technology:[
+            'HTML','CSS','Javascript','Animation'
+        ]
+    },
+    {
+        id:6,
         name:'Notifications page main',
         imageUrl:'./src/img/Projects/notifications-page-main.jpg',
         liveLink:'https://sukanyagurav.github.io/Notifications-page/',
@@ -42,7 +31,7 @@ export default [
     },
 
     {
-        id:5,
+        id:7,
         name:'Interactive card details form main',
         imageUrl:'./src/img/Projects/interactive-card-details-form-main.jpg',
         liveLink:'https://sukanyagurav.github.io/Interactive-card-details-form-/',
@@ -52,7 +41,7 @@ export default [
         ]
     },
     {
-        id:6,
+        id:8,
         name:'Newsletter sign up with success message main',
         imageUrl:'./src/img/Projects/newsletter-sign-up-with-success-message-main.jpg',
         liveLink:'https://sukanyagurav.github.io/newsletter-sign-up-with-success-message-main/',
@@ -62,7 +51,7 @@ export default [
         ]
     },
     {
-        id:7,
+        id:9,
         name:'Coding bootcamp testimonials slider',
         imageUrl:'./src/img/Projects/carousel.jpg',
         liveLink:'https://sukanyagurav.github.io/coding-bootcamp-testimonials-slider-master/',
@@ -73,7 +62,7 @@ export default [
 
     },
     {
-        id:8,
+        id:10,
         name:'Sunnyside agency landing page',
         imageUrl:'./src/img/Projects/sunnyside-agency-landing-page-main.jpg',
         liveLink:'https://sukanyagurav.github.io/Sunnyside-agency-landing-page/',
@@ -83,7 +72,7 @@ export default [
         ]
     },
     {
-        id:9,
+        id:11,
         name:'Intro section with dropdown navigation main',
         imageUrl:'./src/img/Projects/intro-section-with-dropdown-navigation-main.jpg',
         liveLink:'https://sukanyagurav.github.io/Intro-section-with-dropdown-navigation/',
@@ -93,7 +82,7 @@ export default [
         ]
     },
     {
-        id:10,
+        id:12,
         name:'Interactive rating component main',
         imageUrl:'./src/img/Projects/interactive-rating-component-main.jpg',
         liveLink:'https://sukanyagurav.github.io/interactive-rating-component-main/',
@@ -104,7 +93,7 @@ export default [
     },
    
     {
-        id:11,
+        id:13,
         name:'Pricing component with toggle master',
         imageUrl:'./src/img/Projects/pricing-component-with-toggle-master.jpg',
         liveLink:'https://sukanyagurav.github.io/pricing-component-with-toggle-master/',
@@ -114,7 +103,7 @@ export default [
         ]
     },
     {
-        id:12,
+        id:14,
         name:'Testimonials grid section main',
         imageUrl:'./src/img/Projects/testimonials-grid-section-main.jpg',
         liveLink:'https://sukanyagurav.github.io/testimonials-grid-section-main/',
@@ -124,7 +113,7 @@ export default [
         ]
     },
     {
-        id:13,
+        id:15,
         name:'News homepage main',
         imageUrl:'./src/img/Projects/news-homepage-main.jpg',
         liveLink:'https://sukanyagurav.github.io/news-homepage-main/',
@@ -135,7 +124,7 @@ export default [
     },
 
     {
-        id:14,
+        id:16,
         name:'Social proof section master',
         imageUrl:'./src/img/Projects/social-proof-section-master.jpg',
         liveLink:'https://sukanyagurav.github.io/social-proof-section-master/',
@@ -145,7 +134,7 @@ export default [
         ]
     },
     {
-        id:15,
+        id:17,
         name:'Results summary component main',
         imageUrl:'./src/img/Projects/results-summary-component-main.jpg',
         liveLink:'https://sukanyagurav.github.io/results-summary-component-main/',
@@ -156,7 +145,7 @@ export default [
     },
     
     {
-        id:16,
+        id:18,
         name:'Fylo data storage component master',
         imageUrl:'./src/img/Projects/Project 7.jpg',
         liveLink:'https://sukanyagurav.github.io/fylo-data-storage-component-master/',
@@ -166,7 +155,7 @@ export default [
         ]
     },
     {
-        id:17,
+        id:19,
         name:'Insure landing page',
         imageUrl:'./src/img/Projects/Insure landing page.jpg',
         liveLink:'https://sukanyagurav.github.io/Frontend-Mentor---Insure-landing-page/',
@@ -176,11 +165,50 @@ export default [
         ]
     },
     {
-        id:18,
+        id:20,
+        name:'Expenses chart component main',
+        imageUrl:'./src/img/Projects/expenses-chart-component-main.jpg',
+        liveLink:'https://sukanyagurav.github.io/expenses-chart-component-main/',
+        githubLink:'https://github.com/sukanyagurav/expenses-chart-component-main',
+        technology:[
+            'HTML','CSS','Javascript','Animation'
+        ]
+    },
+    {
+        id:21,
+        name:'FAQ accordion card main',
+        imageUrl:'./src/img/Projects/faq-accordion-card-main.jpg',
+        liveLink:'https://sukanyagurav.github.io/faq-accordion-card-main/',
+        githubLink:'https://github.com/sukanyagurav/faq-accordion-card-main/tree/master',
+        technology:[
+            'HTML','CSS','Javascript','Animation'
+        ]
+    },
+    {
+        id:22,
+        name:'Fylo dark theme landing page master',
+        imageUrl:'./src/img/Projects/fylo-dark-theme-landing-page-master.jpg',
+        liveLink:'https://sukanyagurav.github.io/fylo-dark-theme-landing-page-master/',
+        githubLink:'https://github.com/sukanyagurav/fylo-dark-theme-landing-page-master',
+        technology:[
+            'HTML','CSS','Javascript','Animation'
+        ]
+    },
+    {
+        id:23,
         name:'Game landing page',
         imageUrl:'./src/img/Projects/game landing page.JPG',
         liveLink:'https://sukanyagurav.github.io/game-landing-page/',
         githubLink:'https://github.com/sukanyagurav/game-landing-page/tree/master',
+        technology:[
+            'HTML','CSS','Javascript','Animation'
+        ]
+    }, {
+        id:24,
+        name:'Intro component with sign-up form',
+        imageUrl:'./src/img/Projects/Intro component with sign-up form.jpg',
+        liveLink:'https://sukanyagurav.github.io/intro-component-with-signup-form-master/',
+        githubLink:'https://github.com/sukanyagurav/intro-component-with-signup-form-master/tree/master',
         technology:[
             'HTML','CSS','Javascript','Animation'
         ]
