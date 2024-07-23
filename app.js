@@ -1,13 +1,19 @@
 import data from './projectsData.js';
 const loadMore = document.querySelector('.load-more')
 
-console.log(data)
+
 let curr= 0
 function createProject(newData){
     const main = document.querySelector('.project-container')
 
     const articles= newData.map(project=>{
-      console.log(project)
+           
+            for(let i = 0;i<project.technology.length;i++){
+              const list = document.createElement('span')
+              list.innerHTML = project.technology
+              list.style=`--position:${i + 1};`
+              document.querySelector('.card__technology').append(list)
+            }
             return `<article class="card" >
               
 
@@ -21,7 +27,7 @@ function createProject(newData){
                     <a href="${project.githubLink}" target="_blank">
                         <i class="fa-brands fa-square-github" aria-hidden="true"></i>
                       </a>
-                      <div class="card__technology">
+                      <div class="card__technology" style='--quantity:${project.technology.length}; --width:110px;'>
                         ${createList(project?.technology)}
                       </div>
                   </div>
@@ -29,16 +35,16 @@ function createProject(newData){
     
         })
         main.innerHTML+=articles.join('')
-        console.log(newData)
+
 }
 function createList(lists){
-  console.log(lists)
-  return lists.map(item =>`<span>${item}</span>`).join(' ')
+
+  return lists.map((item,index) =>`<span style='--position:${index + 1};'>${item}</span>`).join(' ')
 }
 loadMore.addEventListener('click',(e)=>
 {
     e.target.classList.add('show-loader')
-    console.log(e.target)
+
     e.target.setAttribute('disabled',true)
     let newData 
     setTimeout(()=>{
