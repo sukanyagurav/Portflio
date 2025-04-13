@@ -3,428 +3,853 @@
   <head>
     <meta charset="UTF-8" />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="logo.svg">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link
+      rel="icon"
+      href="logo.svg"
+    />
     <title>SG</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<!-- <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet"> -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="css/style.css">
-   
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet"> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="css/style.css"
+    />
   </head>
   <body>
-  <header>
-    <div class="header-container"  id="header" >
+    <header>
+      <div
+        class="header-container"
+        id="header"
+      >
+        <input
+          type="checkbox"
+          id="menu-toggler"
+          class="menu-checkbox"
+        />
+        <label
+          for="menu-toggler"
+          class="menu__button"
+        >
+          <span class="hamburger"> &nbsp; </span>
+        </label>
+        <label
+          for="menu-toggler"
+          class="backdrop"
+          hidden
+          tabindex="-1"
+        ></label>
+        <h2 class="logo"><a href="#home">SG</a></h2>
+        <nav id="menu-toggler">
+          <ul class="left-links">
+            <li>
+              <a
+                href="#home"
+                class="active-link"
+                >01.<span> &lt;Home/&gt; </span></a
+              >
+            </li>
+            <li>
+              <a href="#about">02.<span> &lt;About/&gt; </span></a>
+            </li>
+          </ul>
 
-    
-    <input type="checkbox" id="menu-toggler" class="menu-checkbox">
-    <label for="menu-toggler" class="menu__button" >
-      <span class="hamburger">
-        &nbsp;
-      </span>
-    </label>
-<label for="menu-toggler" class="backdrop" hidden tabindex="-1"></label>
-<h2 class="logo"><a href="#home">SG</a></h2>
-    <nav id="menu-toggler">
-      
-      <ul class="left-links">
-        <li><a href="#home" class="active-link">01.<span>
-          &lt;Home/&gt;
-        </span></a></li>
-        <li><a href="#about">02.<span>
-          &lt;About/&gt;
-        </span></a></li>
-      </ul>
-    
-      <ul class="rigt-links">
-        <li><a href="#projects">03.<span>
-          &lt;Projects/&gt;
-        </span></a></li>
-        <li><a href="#skill">04.<span>
-          &lt;Skills/&gt;
-        </span></a></li>
-      </ul>
-    </nav>
-  </div>
-  </header>
-  <main >
-  <section class="hero" id="home">
-    <div class="hero-content">
-      <h1 class="name">Sukanya Gurav</h1>
-      <p class="text">As a frontend developer, I have a deep passion for crafting visually appealing and highly functional user interfaces. With a solid foundation in HTML, CSS, and JavaScript, I strive to create seamless and engaging user experiences. I am skilled in utilizing modern frontend frameworks like React and Vue.js, which allow me to build dynamic and responsive web applications efficiently. My attention to detail ensures that every design is pixel-perfect and optimized for performance across different devices and browsers.</p>     
-    </div>
-    
-    <div class="hero-button-content">
-      <div class="hero-image__overlay">
-        <div class="downloadCV" >
-         <a href="src/Sukanya Gurav Resume.pdf" download>Download Resume</a> 
-         <div class="button-bg"></div>
-        </div>
-        
-      </div> 
-    </div>
-  </section>
-  <section class="summary" id="about">
-    <div class="container">
-    <article class="experience-container">
-      <h2 class="title">
-        <span class="heading-2"><i class="fa-solid fa-briefcase"></i> Experience</span></h2>
-     <div class="experience">
-       <div class="event">
-        <span class="date">2021 - Present </span>
-        <h4 class="profession">Associate Technical Engineer </h4>
-        <h5 class="company">Kyndryl Solutions Pvt Ltd</h5>
-       </div>
-      
-     </div>
-    </article>
-    <div class="divider">
-      
-    </div>
-    <article class="education-container">
-      <h2 class="title">
-        <span class="heading-2"><i class="fa-solid fa-school"></i> Education</span></h2>
-      <div class="education">
-        <div class="event">
-         <span class="date">2017 - 2020 </span>
-         <h4 class="profession">Bachelor of Science in Information Technology</h4>
-         <h5 class="university">University Of Mumbai</h5>
-        </div>
-      
+          <ul class="rigt-links">
+            <li>
+              <a href="#projects">03.<span> &lt;Projects/&gt; </span></a>
+            </li>
+            <li>
+              <a href="#skill">04.<span> &lt;Skills/&gt; </span></a>
+            </li>
+          </ul>
+        </nav>
       </div>
-    </article>
-    </div>
-  </section>
-  <section id="projects" class="projects">
-   
-    <h2 class="heading--3">Projects</h2>
-    <div class="wrapper mainProjects">
-      <div class="card">
-        <div class="project__image">
-          <img loading="lazy" src="./src/img/Projects/entertainment web app.jpg" alt="entertainment web app" class="card_image">
+    </header>
+    <main>
+      <section
+        class="hero"
+        id="home"
+      >
+        <div class="hero-content">
+          <h1 class="name">Sukanya Gurav</h1>
+          <p class="text">
+            As a frontend developer, I have a deep passion for crafting visually
+            appealing and highly functional user interfaces. With a solid
+            foundation in HTML, CSS, and JavaScript, I strive to create seamless
+            and engaging user experiences. I am skilled in utilizing modern
+            frontend frameworks like React and Vue.js, which allow me to build
+            dynamic and responsive web applications efficiently. My attention to
+            detail ensures that every design is pixel-perfect and optimized for
+            performance across different devices and browsers.
+          </p>
         </div>
-        <div class="description">
-          <a href="https://entertainmentwebapp67.netlify.app/" target="_blank" class="projectName">BingeVerse</a>
-          <a href="https://github.com/sukanyagurav/Entertainment-web-app"  target="_blank">
-            <i class="fa-brands fa-square-github" aria-hidden="true"></i>
-          </a>
-          <div class="card__technology" style="--quantity:3; --width:110px;">
-            <span style="--position:1">React</span>
-            <span style="--position:2">Redux</span>
-            <span style="--position:3">CSS3</span>
-          </div>
 
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="project__image">
-          <img loading="lazy" src="./src/img/Projects/Merch Maze ecommerce site.png" alt="Merch maze ecommerce site" class="card_image">
-        </div>
-        <div class="description">
-          <a href="https://merchmaze5867.netlify.app/" target="_blank" class="projectName">Merch Maze ecommerce cart</a>
-          <a href="https://github.com/sukanyagurav/Ecommerce-site"  target="_blank">
-            <i class="fa-brands fa-square-github" aria-hidden="true"></i>
-          </a>
-          <div class="card__technology" style="--quantity:3; --width:110px;">
-            <span style="--position:1">React</span>
-            <span style="--position:2">Zustand</span>
-            <span style="--position:3">tailwindcss</span>
-          </div>
-
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="project__image">
-          <img loading="lazy" src="./src/img/Projects/galleria.png" alt="Galleria site" class="card_image">
-        </div>
-        <div class="description">
-          <a href="https://galleria5867.netlify.app/" target="_blank" class="projectName">Galleria</a>
-          <a href="https://github.com/sukanyagurav/Galleria"  target="_blank">
-            <i class="fa-brands fa-square-github" aria-hidden="true"></i>
-          </a>
-          <div class="card__technology" style="--quantity:3; --width:110px;">
-            <span style="--position:1">React</span>
-            <span style="--position:2">Zustand</span>
-            <span style="--position:3">tailwindcss</span>
-          </div>
-
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="project__image">
-          <img loading="lazy" src="./src/img/Projects/buy your desserts.jpg" alt="Buy Desserts" class="card_image">
-        </div>
-        <div class="description">
-          <a href="https://buydesserts5867.netlify.app/" target="_blank" class="projectName">Buy Desserts</a>
-          <a href="https://github.com/sukanyagurav/Buy-Desserts"  target="_blank">
-            <i class="fa-brands fa-square-github" aria-hidden="true"></i>
-          </a>
-          <div class="card__technology" style="--quantity:4; --width:110px;">
-            <span style="--position:1">React</span>
-            <span style="--position:2">Redux</span>
-            <span style="--position:3">CSS3</span>
-            <span style="--position:4">Framer motion</span>
-          </div>
-
-        </div>
-      </div>
-      <div class="card">
-        <div class="project__image">
-          <img loading="lazy" src="./src/img/Projects/desktop_preview.png" alt="Cryptoverse" class="card_image">
-        </div>
-        <div class="description">
-          <a href="https://cryptoverse5867.netlify.app/" target="_blank" class="projectName">Cryptoverse</a>
-          <a href="https://github.com/sukanyagurav/Cryptoverse"  target="_blank">
-            <i class="fa-brands fa-square-github" aria-hidden="true"></i>
-          </a>
-          <div class="card__technology" style="--quantity:4; --width:110px;">
-      
-
-              <span style="--position:1">React </span>
-              <span style="--position:2">Ant design</span>
-              <span style="--position:3">REST API</span>
-              <span style="--position:4">Chart.js</span>
-              <span style="--position:5">Redux</span>
-    
-          </div>
-
-        </div>
-      </div>
-      <div class="card">
-        <div class="project__image">
-          <img loading="lazy" src="./src/img/Projects/coffeelisting.png" alt="coffee list" class="card_image">
-        </div>
-        <div class="description">
-          <a href="https://coffeelisting5867.netlify.app/" target="_blank" class="projectName">Coffee Collections</a>
-          <a href="https://github.com/sukanyagurav/Coffee-listing-page"  target="_blank">
-            <i class="fa-brands fa-square-github" aria-hidden="true"></i>
-          </a>
-          <div class="card__technology" style="--quantity:4; --width:110px;">
-      
-
-              <span style="--position:1">React </span>
-              <span style="--position:2"> Ant design</span>
-              <span style="--position:3">REST API</span>
-              <span style="--position:4">Chart.js</span>
-              <span style="--position:5">Redux</span>
-    
-          </div>
-
-        </div>
-      </div>
-      <div class="card">
-        <div class="project__image">
-          <img loading="lazy" src="./src/img/Projects/coffeeroasters subscription preview.jpg" alt="coffeeroasters subscription web app" class="card_image">
-        </div>
-        <div class="description">
-          <a href="https://cofferoasters-subscription-site-fm.netlify.app/" target="_blank" class="projectName">Coffee Roaster</a>
-          <a href="https://github.com/sukanyagurav/coffeeroasters-subscription-site"  target="_blank">
-            <i class="fa-brands fa-square-github" aria-hidden="true"></i>
-          </a>
-          <div class="card__technology" style="--quantity:3; --width:110px;">
-            <span style="--position:1">React</span>
-            <span style="--position:2">AOS animation</span>
-            <span style="--position:3">Tailwindcss</span>
-          </div>
-
-        </div>
-      </div>
-      <div class="card">
-        <div class="project__image">
-          <img loading="lazy" src="./src/img/Projects/art gallery website.jpg" alt="art gallery web app" class="card_image">
-        </div>
-        <div class="description">
-          <a href="https://art-gallery-website-mrtjhn6f3-sukanya-guravs-projects.vercel.app/" target="_blank" class="projectName">Art Gallery site</a>
-          <a href="https://github.com/sukanyagurav/Art-gallery-website"  target="_blank">
-            <i class="fa-brands fa-square-github" aria-hidden="true"></i>
-          </a>
-          <div class="card__technology" style="--quantity:3; --width:110px;">
-            <span style="--position:1">React</span>
-            <span style="--position:2">CSS</span>
-            <span style="--position:3">Leaflet </span>
-          </div>
-
-        </div>
-      </div>
-      <div class="card">
-        <div class="project__image">
-          <img loading="lazy" src="./src/img/Projects/find-your-stays.png" alt="Find you stays" class="card_image">
-        </div>
-        <div class="description">
-          <a href="https://find-your-stays-5867.netlify.app/" target="_blank" class="projectName">Find Your Stay</a>
-          <a href="https://github.com/sukanyagurav/Property-Listing-App"  target="_blank">
-            <i class="fa-brands fa-square-github" aria-hidden="true"></i>
-          </a>
-          <div class="card__technology" style="--quantity:3; --width:110px;">
-            <span style="--position:1">React</span>
-            <span style="--position:2">Tailwindcss</span>
-            <span style="--position:3">Redux </span>
-            <span style="--position:3">Animation </span>
-          </div>
-
-        </div>
-      </div>
-      <div class="card">
-        <div class="project__image">
-          <img loading="lazy" src="./src/img/Projects/Launch countdown timer.jpg" alt="Launch down timer" class="card_image">
-        </div>
-        <div class="description">
-          <a href="https://sukanyagurav.github.io/Frontend-Mentor---Launch-countdown-timer/" target="_blank" class="projectName">Launch countdown timer</a>
-          <a href="https://github.com/sukanyagurav/Frontend-Mentor---Launch-countdown-timer"  target="_blank">
-            <i class="fa-brands fa-square-github" aria-hidden="true"></i>
-          </a>
-          <div class="card__technology" style="--quantity:3; --width:110px;">
-            <span style="--position:1">HTML5</span>
-            <span style="--position:2">CSS3</span>
-            <span style="--position:3">Javascript</span>
-          </div>
-
-        </div>
-      </div>
-      <div class="card">
-        <div class="project__image">
-          <img loading="lazy" src="./src/img/Projects/Dictionary web app.jpg" alt="" class="card_image">
-        </div>
-        <div class="description">
-          <a href="https://sukanyagurav.github.io/Dictionary-Web-App---Frontend-Mentor-Challenge/" target="_blank" class="projectName">Dictionary Web app</a>
-          <a href="https://github.com/sukanyagurav/Dictionary-Web-App---Frontend-Mentor-Challenge"  target="_blank">
-            <i class="fa-brands fa-square-github" aria-hidden="true"></i>
-          </a>
-          <div class="card__technology" style="--quantity:4; --width:110px;">
-            <span style="--position:1" >HTML</span>
-            <span style="--position:2">CSS</span>
-            <span style="--position:3">JavaScript</span>
-            <span style="--position:4">Animation</span>
-          </div>
-
-        </div>
-      </div>
-      <div class="card">
-        <div class="project__image">
-          <img loading="lazy" src="./src/img/Projects/Planets fact site.jpg" alt="" class="card_image">
-        </div>
-        <div class="description">
-          <a href="https://sukanyagurav.github.io/Frontend-Mentor---Planets-fact-site-solution/" target="_blank" class="projectName">Planet fact site</a>
-          <a href="https://github.com/sukanyagurav/Frontend-Mentor---Planets-fact-site-solution"  target="_blank">
-            <i class="fa-brands fa-square-github" aria-hidden="true"></i>
-          </a>
-          <div class="card__technology" style="--quantity:4; --width:110px;">
-            <span style="--position:1" >HTML</span>
-            <span style="--position:2" >CSS</span>
-            <span style="--position:3" >JavaScript</span>
-            <span style="--position:4" >Animation</span>
-          </div>
-
-        </div>
-      </div>
-      <div class="card">
-        <div class="project__image">
-
-          <img loading="lazy" src="./src/img/Projects/Job listings with filtering.jpg" alt="" class="card_image">
-        </div>
-        <div class="description">
-          <a href="https://sukanyagurav.github.io/Job-listings-with-filtering-challenge-on-Frontend-Mentor/" target="_blank" class="projectName">
-            Job listings with filtering
-          </a>
-          <a href="https://github.com/sukanyagurav/Job-listings-with-filtering-challenge-on-Frontend-Mentor" target="_blank">
-              <i class="fa-brands fa-square-github" aria-hidden="true"></i>
-            </a>
-            <div class="card__technology" style="--quantity:4; --width:110px;">
-              <span  style="--position:1">HTML</span>
-              <span  style="--position:2">CSS</span>
-              <span  style="--position:3">JavaScript</span>
-              <span  style="--position:4">Animation</span>
+        <div class="hero-button-content">
+          <div class="hero-image__overlay">
+            <div class="downloadCV">
+              <a
+                href="src/Sukanya Gurav Resume.pdf"
+                download
+                >Download Resume</a
+              >
+              <div class="button-bg"></div>
             </div>
+          </div>
         </div>
-       
-      </div>
-    
-    <div class="card">
-      <div class="project__image">
-
-        <img loading="lazy" src="./src/img/Projects/REST Countries API with color theme switcher.jpg" alt="" class="card_image">
-      </div>
-      <div class="description">
-        <a href="https://cozy-bubblegum-05c07a.netlify.app/#" target="_blank" class="projectName">REST Countries API with color theme switcher</a>
-        <a href="https://github.com/sukanyagurav/REST-Countries-API-with-color-theme-switcher" target="_blank">
-            <i class="fa-brands fa-square-github" aria-hidden="true"></i>
-          </a>
-          <div class="card__technology" style="--quantity:3; --width:110px;">
-            <span style="--position:1" >HTML</span>
-            <span style="--position:2">CSS</span>
-            <span style="--position:3">JavaScript</span>
-         
-          </div>
-
-      </div>
-    </div>
-     
-
-
-    </div>
- 
-  <div class="mini-projects">
-    <div class="wrapper">
-      <button class="arrowBtn" id="left">
-        <i class="fa-solid fa-angle-left"></i>
-      </button>
-      <ul class="carousel">
-        <li class="card">
-          <div class="project__image">
-            <img loading="lazy" src="./src/img/Projects/IP Address Tracker.jpg" alt="ip address tracker" class="card_image">
-          </div>
-          <div class="description">
-            <a href="https://iptrakcer.netlify.app/" target="_blank" class="projectName">Ip address tracker</a>
-            <a href="https://github.com/sukanyagurav/IP-address-tracker"  target="_blank">
-              <i class="fa-brands fa-square-github" aria-hidden="true"></i>
-            </a>
-            <div class="card__technology" style="--quantity:3; --width:110px;">
-              <span style="--position:1">JavaScript</span>
-              <span style="--position:2">HTML5</span>
-              <span style="--position:3">CSS</span>
+      </section>
+      <section
+        class="summary"
+        id="about"
+      >
+        <div class="container">
+          <article class="experience-container">
+            <h2 class="title">
+              <span class="heading-2"
+                ><i class="fa-solid fa-briefcase"></i> Experience</span
+              >
+            </h2>
+            <div class="experience">
+              <div class="event">
+                <span class="date">2021 - Present </span>
+                <h4 class="profession">Associate Technical Engineer</h4>
+                <h5 class="company">Kyndryl Solutions Pvt Ltd</h5>
+              </div>
             </div>
-  
-          </div>
-        </li>  
-      <li class="card">
-        <div class="project__image">
-          <img loading="lazy" src="./src/img/Projects/clock app.jpg" alt="clock app" class="card_image">
-        </div>
-        <div class="description">
-          <a href="https://sukanyagurav.github.io/Frontend-Mentor---Clock-app/" target="_blank" class="projectName">Clock App</a>
-          <a href="https://github.com/sukanyagurav/Frontend-Mentor---Clock-app"  target="_blank">
-            <i class="fa-brands fa-square-github" aria-hidden="true"></i>
-          </a>
-          <div class="card__technology"  style="--quantity:3; --width:110px;">
-            <span style="--position:1">JavaScript</span>
-            <span style="--position:2">HTML5</span>
-            <span style="--position:3">CSS3</span>
-          </div>
-
-        </div>
-      </li>
-        <li class="card">
-          <div class="project__image">
-            <img loading="lazy" src="./src/img/Projects/Movie Fix App.png" alt="movie fix app" class="card_image">
-          </div>
-          <div class="description">
-            <a href="https://movielistco.netlify.app/" target="_blank" class="projectName">MovieFix App</a>
-            <a href="https://github.com/sukanyagurav/Movie_Fix_app"  target="_blank">
-              <i class="fa-brands fa-square-github" aria-hidden="true"></i>
-            </a>
-            <div class="card__technology"  style="--quantity:3; --width:110px;">
-              <span style="--position:1">React</span>
-              <span style="--position:2">CSS</span>
-              <span style="--position:3">Framer Motion</span>
+          </article>
+          <div class="divider"></div>
+          <article class="education-container">
+            <h2 class="title">
+              <span class="heading-2"
+                ><i class="fa-solid fa-school"></i> Education</span
+              >
+            </h2>
+            <div class="education">
+              <div class="event">
+                <span class="date">2017 - 2020 </span>
+                <h4 class="profession">
+                  Bachelor of Science in Information Technology
+                </h4>
+                <h5 class="university">University Of Mumbai</h5>
+              </div>
             </div>
-
+          </article>
+        </div>
+      </section>
+      <section
+        id="projects"
+        class="projects"
+      >
+        <h2 class="heading--3">Projects</h2>
+        <div class="wrapper mainProjects">
+          <div class="card">
+            <div class="project__image">
+              <img
+                loading="lazy"
+                src="./src/img/Projects/character couter preview.jpg"
+                alt="entertainment web app"
+                class="card_image"
+              />
+            </div>
+            <div class="description">
+              <a
+                href="https://charactercount5867.netlify.app/"
+                target="_blank"
+                class="projectName"
+                >Character Counter
+              </a>
+              <a
+                href="https://github.com/sukanyagurav/Character-counter"
+                target="_blank"
+              >
+                <i
+                  class="fa-brands fa-square-github"
+                  aria-hidden="true"
+                ></i>
+              </a>
+              <div
+                class="card__technology"
+                style="--quantity: 3; --width: 110px"
+              >
+                <span style="--position: 1">NextJs</span>
+                <span style="--position: 2">Tailwindcss</span>
+              </div>
+            </div>
           </div>
-        </li>
-        <!-- <li class="card">
+          <div class="card">
+            <div class="project__image">
+              <img
+                loading="lazy"
+                src="./src/img/Projects/entertainment web app.jpg"
+                alt="entertainment web app"
+                class="card_image"
+              />
+            </div>
+            <div class="description">
+              <a
+                href="https://entertainmentwebapp67.netlify.app/"
+                target="_blank"
+                class="projectName"
+                >BingeVerse</a
+              >
+              <a
+                href="https://github.com/sukanyagurav/Entertainment-web-app"
+                target="_blank"
+              >
+                <i
+                  class="fa-brands fa-square-github"
+                  aria-hidden="true"
+                ></i>
+              </a>
+              <div
+                class="card__technology"
+                style="--quantity: 3; --width: 110px"
+              >
+                <span style="--position: 1">React</span>
+                <span style="--position: 2">Redux</span>
+                <span style="--position: 3">CSS3</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="project__image">
+              <img
+                loading="lazy"
+                src="./src/img/Projects/Conference ticket generator.jpg"
+                alt="entertainment web app"
+                class="card_image"
+              />
+            </div>
+            <div class="description">
+              <a
+                href="https://conference-ticket-generator5867.netlify.app/"
+                target="_blank"
+                class="projectName"
+              >
+                Conference ticket generator
+              </a>
+              <a
+                href="https://github.com/sukanyagurav/Conference-ticket-generator"
+                target="_blank"
+              >
+                <i
+                  class="fa-brands fa-square-github"
+                  aria-hidden="true"
+                ></i>
+              </a>
+              <div
+                class="card__technology"
+                style="--quantity: 3; --width: 110px"
+              >
+                <span style="--position: 1">NextJs</span>
+                <span style="--position: 2">Tailwindcss</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="project__image">
+              <img
+                loading="lazy"
+                src="./src/img/Projects/Merch Maze ecommerce site.png"
+                alt="Merch maze ecommerce site"
+                class="card_image"
+              />
+            </div>
+            <div class="description">
+              <a
+                href="https://merchmaze5867.netlify.app/"
+                target="_blank"
+                class="projectName"
+                >Merch Maze ecommerce cart</a
+              >
+              <a
+                href="https://github.com/sukanyagurav/Ecommerce-site"
+                target="_blank"
+              >
+                <i
+                  class="fa-brands fa-square-github"
+                  aria-hidden="true"
+                ></i>
+              </a>
+              <div
+                class="card__technology"
+                style="--quantity: 3; --width: 110px"
+              >
+                <span style="--position: 1">React</span>
+                <span style="--position: 2">Zustand</span>
+                <span style="--position: 3">tailwindcss</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="project__image">
+              <img
+                loading="lazy"
+                src="./src/img/Projects/galleria.png"
+                alt="Galleria site"
+                class="card_image"
+              />
+            </div>
+            <div class="description">
+              <a
+                href="https://galleria5867.netlify.app/"
+                target="_blank"
+                class="projectName"
+                >Galleria</a
+              >
+              <a
+                href="https://github.com/sukanyagurav/Galleria"
+                target="_blank"
+              >
+                <i
+                  class="fa-brands fa-square-github"
+                  aria-hidden="true"
+                ></i>
+              </a>
+              <div
+                class="card__technology"
+                style="--quantity: 3; --width: 110px"
+              >
+                <span style="--position: 1">React</span>
+                <span style="--position: 2">Zustand</span>
+                <span style="--position: 3">tailwindcss</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="project__image">
+              <img
+                loading="lazy"
+                src="./src/img/Projects/buy your desserts.jpg"
+                alt="Buy Desserts"
+                class="card_image"
+              />
+            </div>
+            <div class="description">
+              <a
+                href="https://buydesserts5867.netlify.app/"
+                target="_blank"
+                class="projectName"
+                >Buy Desserts</a
+              >
+              <a
+                href="https://github.com/sukanyagurav/Buy-Desserts"
+                target="_blank"
+              >
+                <i
+                  class="fa-brands fa-square-github"
+                  aria-hidden="true"
+                ></i>
+              </a>
+              <div
+                class="card__technology"
+                style="--quantity: 4; --width: 110px"
+              >
+                <span style="--position: 1">React</span>
+                <span style="--position: 2">Redux</span>
+                <span style="--position: 3">CSS3</span>
+                <span style="--position: 4">Framer motion</span>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="project__image">
+              <img
+                loading="lazy"
+                src="./src/img/Projects/desktop_preview.png"
+                alt="Cryptoverse"
+                class="card_image"
+              />
+            </div>
+            <div class="description">
+              <a
+                href="https://cryptoverse5867.netlify.app/"
+                target="_blank"
+                class="projectName"
+                >Cryptoverse</a
+              >
+              <a
+                href="https://github.com/sukanyagurav/Cryptoverse"
+                target="_blank"
+              >
+                <i
+                  class="fa-brands fa-square-github"
+                  aria-hidden="true"
+                ></i>
+              </a>
+              <div
+                class="card__technology"
+                style="--quantity: 4; --width: 110px"
+              >
+                <span style="--position: 1">React </span>
+                <span style="--position: 2">Ant design</span>
+                <span style="--position: 3">REST API</span>
+                <span style="--position: 4">Chart.js</span>
+                <span style="--position: 5">Redux</span>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="project__image">
+              <img
+                loading="lazy"
+                src="./src/img/Projects/coffeelisting.png"
+                alt="coffee list"
+                class="card_image"
+              />
+            </div>
+            <div class="description">
+              <a
+                href="https://coffeelisting5867.netlify.app/"
+                target="_blank"
+                class="projectName"
+                >Coffee Collections</a
+              >
+              <a
+                href="https://github.com/sukanyagurav/Coffee-listing-page"
+                target="_blank"
+              >
+                <i
+                  class="fa-brands fa-square-github"
+                  aria-hidden="true"
+                ></i>
+              </a>
+              <div
+                class="card__technology"
+                style="--quantity: 4; --width: 110px"
+              >
+                <span style="--position: 1">React </span>
+                <span style="--position: 2"> Ant design</span>
+                <span style="--position: 3">REST API</span>
+                <span style="--position: 4">Chart.js</span>
+                <span style="--position: 5">Redux</span>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="project__image">
+              <img
+                loading="lazy"
+                src="./src/img/Projects/coffeeroasters subscription preview.jpg"
+                alt="coffeeroasters subscription web app"
+                class="card_image"
+              />
+            </div>
+            <div class="description">
+              <a
+                href="https://cofferoasters-subscription-site-fm.netlify.app/"
+                target="_blank"
+                class="projectName"
+                >Coffee Roaster</a
+              >
+              <a
+                href="https://github.com/sukanyagurav/coffeeroasters-subscription-site"
+                target="_blank"
+              >
+                <i
+                  class="fa-brands fa-square-github"
+                  aria-hidden="true"
+                ></i>
+              </a>
+              <div
+                class="card__technology"
+                style="--quantity: 3; --width: 110px"
+              >
+                <span style="--position: 1">React</span>
+                <span style="--position: 2">AOS animation</span>
+                <span style="--position: 3">Tailwindcss</span>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="project__image">
+              <img
+                loading="lazy"
+                src="./src/img/Projects/art gallery website.jpg"
+                alt="art gallery web app"
+                class="card_image"
+              />
+            </div>
+            <div class="description">
+              <a
+                href="https://art-gallery-website-mrtjhn6f3-sukanya-guravs-projects.vercel.app/"
+                target="_blank"
+                class="projectName"
+                >Art Gallery site</a
+              >
+              <a
+                href="https://github.com/sukanyagurav/Art-gallery-website"
+                target="_blank"
+              >
+                <i
+                  class="fa-brands fa-square-github"
+                  aria-hidden="true"
+                ></i>
+              </a>
+              <div
+                class="card__technology"
+                style="--quantity: 3; --width: 110px"
+              >
+                <span style="--position: 1">React</span>
+                <span style="--position: 2">CSS</span>
+                <span style="--position: 3">Leaflet </span>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="project__image">
+              <img
+                loading="lazy"
+                src="./src/img/Projects/find-your-stays.png"
+                alt="Find you stays"
+                class="card_image"
+              />
+            </div>
+            <div class="description">
+              <a
+                href="https://find-your-stays-5867.netlify.app/"
+                target="_blank"
+                class="projectName"
+                >Find Your Stay</a
+              >
+              <a
+                href="https://github.com/sukanyagurav/Property-Listing-App"
+                target="_blank"
+              >
+                <i
+                  class="fa-brands fa-square-github"
+                  aria-hidden="true"
+                ></i>
+              </a>
+              <div
+                class="card__technology"
+                style="--quantity: 3; --width: 110px"
+              >
+                <span style="--position: 1">React</span>
+                <span style="--position: 2">Tailwindcss</span>
+                <span style="--position: 3">Redux </span>
+                <span style="--position: 3">Animation </span>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="project__image">
+              <img
+                loading="lazy"
+                src="./src/img/Projects/Launch countdown timer.jpg"
+                alt="Launch down timer"
+                class="card_image"
+              />
+            </div>
+            <div class="description">
+              <a
+                href="https://sukanyagurav.github.io/Frontend-Mentor---Launch-countdown-timer/"
+                target="_blank"
+                class="projectName"
+                >Launch countdown timer</a
+              >
+              <a
+                href="https://github.com/sukanyagurav/Frontend-Mentor---Launch-countdown-timer"
+                target="_blank"
+              >
+                <i
+                  class="fa-brands fa-square-github"
+                  aria-hidden="true"
+                ></i>
+              </a>
+              <div
+                class="card__technology"
+                style="--quantity: 3; --width: 110px"
+              >
+                <span style="--position: 1">HTML5</span>
+                <span style="--position: 2">CSS3</span>
+                <span style="--position: 3">Javascript</span>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="project__image">
+              <img
+                loading="lazy"
+                src="./src/img/Projects/Dictionary web app.jpg"
+                alt=""
+                class="card_image"
+              />
+            </div>
+            <div class="description">
+              <a
+                href="https://sukanyagurav.github.io/Dictionary-Web-App---Frontend-Mentor-Challenge/"
+                target="_blank"
+                class="projectName"
+                >Dictionary Web app</a
+              >
+              <a
+                href="https://github.com/sukanyagurav/Dictionary-Web-App---Frontend-Mentor-Challenge"
+                target="_blank"
+              >
+                <i
+                  class="fa-brands fa-square-github"
+                  aria-hidden="true"
+                ></i>
+              </a>
+              <div
+                class="card__technology"
+                style="--quantity: 4; --width: 110px"
+              >
+                <span style="--position: 1">HTML</span>
+                <span style="--position: 2">CSS</span>
+                <span style="--position: 3">JavaScript</span>
+                <span style="--position: 4">Animation</span>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="project__image">
+              <img
+                loading="lazy"
+                src="./src/img/Projects/Planets fact site.jpg"
+                alt=""
+                class="card_image"
+              />
+            </div>
+            <div class="description">
+              <a
+                href="https://sukanyagurav.github.io/Frontend-Mentor---Planets-fact-site-solution/"
+                target="_blank"
+                class="projectName"
+                >Planet fact site</a
+              >
+              <a
+                href="https://github.com/sukanyagurav/Frontend-Mentor---Planets-fact-site-solution"
+                target="_blank"
+              >
+                <i
+                  class="fa-brands fa-square-github"
+                  aria-hidden="true"
+                ></i>
+              </a>
+              <div
+                class="card__technology"
+                style="--quantity: 4; --width: 110px"
+              >
+                <span style="--position: 1">HTML</span>
+                <span style="--position: 2">CSS</span>
+                <span style="--position: 3">JavaScript</span>
+                <span style="--position: 4">Animation</span>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="project__image">
+              <img
+                loading="lazy"
+                src="./src/img/Projects/Job listings with filtering.jpg"
+                alt=""
+                class="card_image"
+              />
+            </div>
+            <div class="description">
+              <a
+                href="https://sukanyagurav.github.io/Job-listings-with-filtering-challenge-on-Frontend-Mentor/"
+                target="_blank"
+                class="projectName"
+              >
+                Job listings with filtering
+              </a>
+              <a
+                href="https://github.com/sukanyagurav/Job-listings-with-filtering-challenge-on-Frontend-Mentor"
+                target="_blank"
+              >
+                <i
+                  class="fa-brands fa-square-github"
+                  aria-hidden="true"
+                ></i>
+              </a>
+              <div
+                class="card__technology"
+                style="--quantity: 4; --width: 110px"
+              >
+                <span style="--position: 1">HTML</span>
+                <span style="--position: 2">CSS</span>
+                <span style="--position: 3">JavaScript</span>
+                <span style="--position: 4">Animation</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="project__image">
+              <img
+                loading="lazy"
+                src="./src/img/Projects/REST Countries API with color theme switcher.jpg"
+                alt=""
+                class="card_image"
+              />
+            </div>
+            <div class="description">
+              <a
+                href="https://cozy-bubblegum-05c07a.netlify.app/#"
+                target="_blank"
+                class="projectName"
+                >REST Countries API with color theme switcher</a
+              >
+              <a
+                href="https://github.com/sukanyagurav/REST-Countries-API-with-color-theme-switcher"
+                target="_blank"
+              >
+                <i
+                  class="fa-brands fa-square-github"
+                  aria-hidden="true"
+                ></i>
+              </a>
+              <div
+                class="card__technology"
+                style="--quantity: 3; --width: 110px"
+              >
+                <span style="--position: 1">HTML</span>
+                <span style="--position: 2">CSS</span>
+                <span style="--position: 3">JavaScript</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mini-projects">
+          <div class="wrapper">
+            <button
+              class="arrowBtn"
+              id="left"
+            >
+              <i class="fa-solid fa-angle-left"></i>
+            </button>
+            <ul class="carousel">
+              <li class="card">
+                <div class="project__image">
+                  <img
+                    loading="lazy"
+                    src="./src/img/Projects/IP Address Tracker.jpg"
+                    alt="ip address tracker"
+                    class="card_image"
+                  />
+                </div>
+                <div class="description">
+                  <a
+                    href="https://iptrakcer.netlify.app/"
+                    target="_blank"
+                    class="projectName"
+                    >Ip address tracker</a
+                  >
+                  <a
+                    href="https://github.com/sukanyagurav/IP-address-tracker"
+                    target="_blank"
+                  >
+                    <i
+                      class="fa-brands fa-square-github"
+                      aria-hidden="true"
+                    ></i>
+                  </a>
+                  <div
+                    class="card__technology"
+                    style="--quantity: 3; --width: 110px"
+                  >
+                    <span style="--position: 1">JavaScript</span>
+                    <span style="--position: 2">HTML5</span>
+                    <span style="--position: 3">CSS</span>
+                  </div>
+                </div>
+              </li>
+              <li class="card">
+                <div class="project__image">
+                  <img
+                    loading="lazy"
+                    src="./src/img/Projects/clock app.jpg"
+                    alt="clock app"
+                    class="card_image"
+                  />
+                </div>
+                <div class="description">
+                  <a
+                    href="https://sukanyagurav.github.io/Frontend-Mentor---Clock-app/"
+                    target="_blank"
+                    class="projectName"
+                    >Clock App</a
+                  >
+                  <a
+                    href="https://github.com/sukanyagurav/Frontend-Mentor---Clock-app"
+                    target="_blank"
+                  >
+                    <i
+                      class="fa-brands fa-square-github"
+                      aria-hidden="true"
+                    ></i>
+                  </a>
+                  <div
+                    class="card__technology"
+                    style="--quantity: 3; --width: 110px"
+                  >
+                    <span style="--position: 1">JavaScript</span>
+                    <span style="--position: 2">HTML5</span>
+                    <span style="--position: 3">CSS3</span>
+                  </div>
+                </div>
+              </li>
+              <li class="card">
+                <div class="project__image">
+                  <img
+                    loading="lazy"
+                    src="./src/img/Projects/Movie Fix App.png"
+                    alt="movie fix app"
+                    class="card_image"
+                  />
+                </div>
+                <div class="description">
+                  <a
+                    href="https://movielistco.netlify.app/"
+                    target="_blank"
+                    class="projectName"
+                    >MovieFix App</a
+                  >
+                  <a
+                    href="https://github.com/sukanyagurav/Movie_Fix_app"
+                    target="_blank"
+                  >
+                    <i
+                      class="fa-brands fa-square-github"
+                      aria-hidden="true"
+                    ></i>
+                  </a>
+                  <div
+                    class="card__technology"
+                    style="--quantity: 3; --width: 110px"
+                  >
+                    <span style="--position: 1">React</span>
+                    <span style="--position: 2">CSS</span>
+                    <span style="--position: 3">Framer Motion</span>
+                  </div>
+                </div>
+              </li>
+              <!-- <li class="card">
           <div class="project__image">
             <img loading="lazy" src="./src/img/Projects/renting furniture.jpg" alt="" class="card_image">
           </div>
@@ -442,282 +867,512 @@
           </div>
         </li>
         -->
-        
 
-      <li class="card">
-        <div class="project__image">
+              <li class="card">
+                <div class="project__image">
+                  <img
+                    loading="lazy"
+                    src="./src/img/Projects/tip-calculator-app-main.jpg"
+                    alt=""
+                    class="card_image"
+                  />
+                </div>
+                <div class="description">
+                  <a
+                    href="https://sukanyagurav.github.io/tip-calculator-app-main/"
+                    target="_blank"
+                    class="projectName"
+                  >
+                    Tip Calculator
+                  </a>
+                  <a
+                    href="https://github.com/sukanyagurav/tip-calculator-app-main"
+                    target="_blank"
+                  >
+                    <i
+                      class="fa-brands fa-square-github"
+                      aria-hidden="true"
+                    ></i>
+                  </a>
+                  <div
+                    class="card__technology"
+                    style="--quantity: 3; --width: 110px"
+                  >
+                    <span style="--position: 1">HTML</span>
+                    <span style="--position: 2">CSS</span>
+                    <span style="--position: 3">JavaScript</span>
+                  </div>
+                </div>
+              </li>
 
-          <img loading="lazy" src="./src/img/Projects/tip-calculator-app-main.jpg" alt="" class="card_image">
-        </div>
-        <div class="description">
-          <a href="https://sukanyagurav.github.io/tip-calculator-app-main/" target="_blank" class="projectName">
-            Tip Calculator
-          </a>
-          <a href="https://github.com/sukanyagurav/tip-calculator-app-main" target="_blank">
-              <i class="fa-brands fa-square-github" aria-hidden="true"></i>
-            </a>
-            <div class="card__technology" style="--quantity:3; --width:110px;">
-              <span style="--position:1">HTML</span>
-              <span style="--position:2">CSS</span>
-              <span style="--position:3">JavaScript</span>
-            </div>
-        </div>
-      </li>
+              <li class="card">
+                <div class="project__image">
+                  <img
+                    loading="lazy"
+                    src="./src/img/Projects/Loopstudios landing page.jpg"
+                    alt=""
+                    class="card_image"
+                  />
+                </div>
+                <div class="description">
+                  <a
+                    href="https://stellular-mandazi-f5268b.netlify.app/"
+                    target="_blank"
+                    class="projectName"
+                  >
+                    Loopstudios landing page
+                  </a>
+                  <a
+                    href="https://github.com/sukanyagurav/Frontend-Mentor---Loopstudios-landing-page"
+                    target="_blank"
+                  >
+                    <i
+                      class="fa-brands fa-square-github"
+                      aria-hidden="true"
+                    ></i>
+                  </a>
+                  <div
+                    class="card__technology"
+                    style="--quantity: 4; --width: 110px"
+                  >
+                    <span style="--position: 1">HTML</span>
+                    <span style="--position: 2">CSS</span>
+                    <span style="--position: 3">JavaScript</span>
+                    <span style="--position: 4">Animation</span>
+                  </div>
+                </div>
+              </li>
 
-      <li class="card">
-        <div class="project__image">
+              <li class="card">
+                <div class="project__image">
+                  <img
+                    loading="lazy"
+                    src="./src/img/Projects/Password generator app.jpg"
+                    alt=""
+                    class="card_image"
+                  />
+                </div>
+                <div class="description">
+                  <a
+                    href="https://sukanyagurav.github.io/Frontend-Mentor---Password-Generator-App-Solution/"
+                    target="_blank"
+                    class="projectName"
+                  >
+                    Password Generator App
+                  </a>
+                  <a
+                    href="https://github.com/sukanyagurav/Frontend-Mentor---Password-Generator-App-Solution"
+                    target="_blank"
+                  >
+                    <i
+                      class="fa-brands fa-square-github"
+                      aria-hidden="true"
+                    ></i>
+                  </a>
+                  <div
+                    class="card__technology"
+                    style="--quantity: 3; --width: 110px"
+                  >
+                    <span style="--position: 1">HTML</span>
+                    <span style="--position: 2">CSS</span>
+                    <span style="--position: 3">JavaScript</span>
+                  </div>
+                </div>
+              </li>
+              <li class="card">
+                <div class="project__image">
+                  <img
+                    loading="lazy"
+                    src="./src/img/Projects/ageCalculator.jpg"
+                    alt=""
+                    class="card_image"
+                  />
+                </div>
+                <div class="description">
+                  <a
+                    href="https://sukanyagurav.github.io/age-calculator-app-main/"
+                    target="_blank"
+                    class="projectName"
+                  >
+                    Age Calculator App
+                  </a>
+                  <a
+                    href="https://github.com/sukanyagurav/age-calculator-app-main"
+                    target="_blank"
+                  >
+                    <i
+                      class="fa-brands fa-square-github"
+                      aria-hidden="true"
+                    ></i>
+                  </a>
+                  <div
+                    class="card__technology"
+                    style="--quantity: 4; --width: 110px"
+                  >
+                    <span style="--position: 1">HTML</span>
+                    <span style="--position: 2">CSS</span>
+                    <span style="--position: 3">JavaScript</span>
+                  </div>
+                </div>
+              </li>
+              <li class="card">
+                <div class="project__image">
+                  <img
+                    loading="lazy"
+                    src="./src/img/Projects/Recipe page.jpg"
+                    alt=""
+                    class="card_image"
+                  />
+                </div>
+                <div class="description">
+                  <a
+                    href="https://sukanyagurav.github.io/Frontend-mentor-challenge-recipe-page-main/"
+                    target="_blank"
+                    class="projectName"
+                  >
+                    Recipe page main
+                  </a>
+                  <a
+                    href="https://github.com/sukanyagurav/Frontend-mentor-challenge-recipe-page-main"
+                    target="_blank"
+                  >
+                    <i
+                      class="fa-brands fa-square-github"
+                      aria-hidden="true"
+                    ></i>
+                  </a>
+                  <div
+                    class="card__technology"
+                    style="--quantity: 3; --width: 110px"
+                  >
+                    <span style="--position: 1">HTML</span>
+                    <span style="--position: 2">CSS</span>
+                    <span style="--position: 3">Animation</span>
+                  </div>
+                </div>
+              </li>
 
-          <img loading="lazy" src="./src/img/Projects/Loopstudios landing page.jpg" alt="" class="card_image">
-        </div>
-        <div class="description">
-          <a href="https://stellular-mandazi-f5268b.netlify.app/" target="_blank" class="projectName">
-            Loopstudios landing page
-          </a>
-          <a href="https://github.com/sukanyagurav/Frontend-Mentor---Loopstudios-landing-page" target="_blank">
-              <i class="fa-brands fa-square-github" aria-hidden="true"></i>
-            </a>
-            <div class="card__technology" style="--quantity:4; --width:110px;">
-              <span style="--position:1">HTML</span>
-              <span style="--position:2">CSS</span>
-              <span style="--position:3">JavaScript</span>
-              <span style="--position:4">Animation</span>
-            </div>
-        </div>
-      </li>
-  
-      <li class="card">
-        <div class="project__image">
+              <li class="card">
+                <div class="project__image">
+                  <img
+                    loading="lazy"
+                    src="./src/img/Projects/AdviceGenerator.jpg"
+                    alt=""
+                    class="card_image"
+                  />
+                </div>
+                <div class="description">
+                  <a
+                    href="https://sukanyagurav.github.io/advice-generator-app-main-/"
+                    target="_blank"
+                    class="projectName"
+                  >
+                    Advice generator app
+                  </a>
+                  <a
+                    href="https://github.com/sukanyagurav/advice-generator-app-main-"
+                    target="_blank"
+                  >
+                    <i
+                      class="fa-brands fa-square-github"
+                      aria-hidden="true"
+                    ></i>
+                  </a>
+                  <div
+                    class="card__technology"
+                    style="--quantity: 4; --width: 110px"
+                  >
+                    <span style="--position: 1">HTML</span>
+                    <span style="--position: 2">CSS</span>
+                    <span style="--position: 3">JavaScript</span>
+                    <span style="--position: 4">Animation</span>
+                  </div>
+                </div>
+              </li>
+              <li class="card">
+                <div class="project__image">
+                  <img
+                    loading="lazy"
+                    src="./src/img/Projects/Pomodoro timer.jpg"
+                    alt=""
+                    class="card_image"
+                  />
+                </div>
+                <div class="description">
+                  <a
+                    href="https://sukanyagurav.github.io/Pomodoro-timer/"
+                    target="_blank"
+                    class="projectName"
+                  >
+                    Pomodoro timer
+                  </a>
+                  <a
+                    href="https://github.com/sukanyagurav/Pomodoro-timer"
+                    target="_blank"
+                  >
+                    <i
+                      class="fa-brands fa-square-github"
+                      aria-hidden="true"
+                    ></i>
+                  </a>
+                  <div
+                    class="card__technology"
+                    style="--quantity: 3; --width: 110px"
+                  >
+                    <span style="--position: 1">HTML</span>
+                    <span style="--position: 2">CSS</span>
+                    <span style="--position: 3">JavaScript</span>
+                  </div>
+                </div>
+              </li>
 
-          <img loading="lazy" src="./src/img/Projects/Password generator app.jpg" alt="" class="card_image">
-        </div>
-        <div class="description">
-          <a href="https://sukanyagurav.github.io/Frontend-Mentor---Password-Generator-App-Solution/" target="_blank" class="projectName">
-            Password Generator App
-          </a>
-          <a href="https://github.com/sukanyagurav/Frontend-Mentor---Password-Generator-App-Solution" target="_blank">
-              <i class="fa-brands fa-square-github" aria-hidden="true"></i>
-            </a>
-            <div class="card__technology" style="--quantity:3; --width:110px;">
-              <span  style="--position:1">HTML</span>
-              <span  style="--position:2">CSS</span>
-              <span  style="--position:3">JavaScript</span>
-            </div>
-        </div>
-      
-      </li>
-      <li class="card">
-        <div class="project__image">
+              <li class="card">
+                <div class="project__image">
+                  <img
+                    loading="lazy"
+                    src="./src/img/Projects/Multi step form.jpg"
+                    alt=""
+                    class="card_image"
+                  />
+                </div>
+                <div class="description">
+                  <a
+                    href="https://sukanyagurav.github.io/Frontend-Mentor---Multi-step-form/"
+                    target="_blank"
+                    class="projectName"
+                  >
+                    Multi step form
+                  </a>
+                  <a
+                    href="https://github.com/sukanyagurav/Frontend-Mentor---Multi-step-form"
+                    target="_blank"
+                  >
+                    <i
+                      class="fa-brands fa-square-github"
+                      aria-hidden="true"
+                    ></i>
+                  </a>
+                  <div
+                    class="card__technology"
+                    style="--quantity: 4; --width: 110px"
+                  >
+                    <span style="--position: 1">HTML</span>
+                    <span style="--position: 2">CSS</span>
+                    <span style="--position: 3">JavaScript</span>
+                    <span style="--position: 4">Animation</span>
+                  </div>
+                </div>
+              </li>
+              <li class="card">
+                <div class="project__image">
+                  <img
+                    loading="lazy"
+                    src="./src/img/Projects/Room homepage.jpg"
+                    alt=""
+                    class="card_image"
+                  />
+                </div>
+                <div class="description">
+                  <a
+                    href="https://sukanyagurav.github.io/Frontend-mentor-challenge-Room-homepage-coding-challenge/"
+                    target="_blank"
+                    class="projectName"
+                  >
+                    Room homepage landing page
+                  </a>
+                  <a
+                    href="https://github.com/sukanyagurav/Frontend-mentor-challenge-Room-homepage-coding-challenge/tree/main"
+                    target="_blank"
+                  >
+                    <i
+                      class="fa-brands fa-square-github"
+                      aria-hidden="true"
+                    ></i>
+                  </a>
+                  <div
+                    class="card__technology"
+                    style="--quantity: 4; --width: 110px"
+                  >
+                    <span style="--position: 1">HTML</span>
+                    <span style="--position: 2">CSS</span>
+                    <span style="--position: 3">JavaScript</span>
+                    <span style="--position: 4">Animation</span>
+                  </div>
+                </div>
+              </li>
 
-          <img loading="lazy" src="./src/img/Projects/ageCalculator.jpg" alt="" class="card_image">
-        </div>
-        <div class="description">
-          <a href="https://sukanyagurav.github.io/age-calculator-app-main/" target="_blank" class="projectName">
-            Age Calculator App
-          </a>
-          <a href="https://github.com/sukanyagurav/age-calculator-app-main" target="_blank">
-              <i class="fa-brands fa-square-github" aria-hidden="true"></i>
-            </a>
-            <div class="card__technology" style="--quantity:4; --width:110px;">
-              <span style="--position:1">HTML</span>
-              <span style="--position:2">CSS</span>
-              <span style="--position:3">JavaScript</span>
-            </div>
-        </div>
-      </li>
-      <li class="card">
-        <div class="project__image">
+              <li class="card">
+                <div class="project__image">
+                  <img
+                    loading="lazy"
+                    src="./src/img/Projects/Project 5.jpg"
+                    alt=""
+                    class="card_image"
+                  />
+                </div>
+                <div class="description">
+                  <a
+                    href="https://sukanyagurav.github.io/Chat-app-CSS-illustration/"
+                    target="_blank"
+                    class="projectName"
+                  >
+                    Chat app CSS illustration
+                  </a>
+                  <a
+                    href="https://github.com/sukanyagurav/Chat-app-CSS-illustration/tree/master"
+                    target="_blank"
+                  >
+                    <i
+                      class="fa-brands fa-square-github"
+                      aria-hidden="true"
+                    ></i>
+                  </a>
+                  <div
+                    class="card__technology"
+                    style="--quantity: 3; --width: 110px"
+                  >
+                    <span style="--position: 1">HTML</span>
+                    <span style="--position: 2">CSS</span>
+                    <span style="--position: 3">Animation</span>
+                  </div>
+                </div>
+              </li>
+              <li class="card">
+                <div class="project__image">
+                  <img
+                    loading="lazy"
+                    src="./src/img/Projects/Project 6.jpg"
+                    alt=""
+                    class="card_image"
+                  />
+                </div>
+                <div class="description">
+                  <a
+                    href="https://sukanyagurav.github.io/four-card-feature-section-master/"
+                    target="_blank"
+                    class="projectName"
+                  >
+                    Four card feature section
+                  </a>
+                  <a
+                    href="https://github.com/sukanyagurav/four-card-feature-section-master/tree/master"
+                    target="_blank"
+                  >
+                    <i
+                      class="fa-brands fa-square-github"
+                      aria-hidden="true"
+                    ></i>
+                  </a>
+                  <div
+                    class="card__technology"
+                    style="--quantity: 3; --width: 110px"
+                  >
+                    <span style="--position: 1">HTML</span>
+                    <span style="--position: 2">CSS</span>
+                    <span style="--position: 3">Animation</span>
+                  </div>
+                </div>
+              </li>
 
-          <img loading="lazy" src="./src/img/Projects/Recipe page.jpg" alt="" class="card_image">
-        </div>
-        <div class="description">
-          <a href="https://sukanyagurav.github.io/Frontend-mentor-challenge-recipe-page-main/" target="_blank" class="projectName">
-            Recipe page main
-          </a>
-          <a href="https://github.com/sukanyagurav/Frontend-mentor-challenge-recipe-page-main" target="_blank">
-              <i class="fa-brands fa-square-github" aria-hidden="true"></i>
-            </a>
-            <div class="card__technology" style="--quantity:3; --width:110px;">
-              <span style="--position:1">HTML</span>
-              <span style="--position:2">CSS</span>
-              <span style="--position:3">Animation</span>
-            </div>
-        </div>
-      </li>
-     
-      <li class="card">
-        <div class="project__image">
-
-          <img loading="lazy" src="./src/img/Projects/AdviceGenerator.jpg" alt="" class="card_image">
-        </div>
-        <div class="description">
-          <a href="https://sukanyagurav.github.io/advice-generator-app-main-/" target="_blank" class="projectName">
-            Advice generator app
-          </a>
-          <a href="https://github.com/sukanyagurav/advice-generator-app-main-" target="_blank">
-              <i class="fa-brands fa-square-github" aria-hidden="true"></i>
-            </a>
-            <div class="card__technology" style="--quantity:4; --width:110px;">
-              <span style="--position:1">HTML</span>
-              <span style="--position:2">CSS</span>
-              <span style="--position:3">JavaScript</span>
-              <span style="--position:4">Animation</span>
-            </div>
-        </div>
-      </li>
-      <li class="card">
-        <div class="project__image">
-          <img loading="lazy" src="./src/img/Projects/Pomodoro timer.jpg" alt="" class="card_image">
-        </div>
-        <div class="description">
-          <a href="https://sukanyagurav.github.io/Pomodoro-timer/" target="_blank" class="projectName">
-            Pomodoro timer
-          </a>
-          <a href="https://github.com/sukanyagurav/Pomodoro-timer" target="_blank">
-              <i class="fa-brands fa-square-github" aria-hidden="true"></i>
-            </a>
-            <div class="card__technology" style="--quantity:3; --width:110px;">
-              <span style="--position:1">HTML</span>
-              <span style="--position:2">CSS</span>
-              <span style="--position:3">JavaScript</span>
-            </div>
-        </div>
-      </li>
-
-
-      <li class="card">
-          <div class="project__image">
-            <img loading="lazy" src="./src/img/Projects/Multi step form.jpg" alt="" class="card_image">
+              <li class="card">
+                <div class="project__image">
+                  <img
+                    loading="lazy"
+                    src="./src/img/Projects/readbooks.JPG"
+                    alt=""
+                    class="card_image"
+                  />
+                </div>
+                <div class="description">
+                  <a
+                    href="https://sukanyagurav.github.io/readbooks/"
+                    target="_blank"
+                    class="projectName"
+                  >
+                    Readbook landing page
+                  </a>
+                  <a
+                    href="https://github.com/sukanyagurav/readbooks/tree/master"
+                    target="_blank"
+                  >
+                    <i
+                      class="fa-brands fa-square-github"
+                      aria-hidden="true"
+                    ></i>
+                  </a>
+                  <div
+                    class="card__technology"
+                    style="--quantity: 3; --width: 110px"
+                  >
+                    <span style="--position: 1">HTML</span>
+                    <span style="--position: 2">CSS</span>
+                    <span style="--position: 3">Animation</span>
+                  </div>
+                </div>
+              </li>
+              <li class="card">
+                <div class="project__image">
+                  <img
+                    loading="lazy"
+                    src="./src/img/Projects/Project 8.jpg"
+                    alt=""
+                    class="card_image"
+                  />
+                </div>
+                <div class="description">
+                  <a
+                    href="https://sukanyagurav.github.io/Clipboard-landing-page/"
+                    target="_blank"
+                    class="projectName"
+                  >
+                    Clipboard landing page
+                  </a>
+                  <a
+                    href="https://github.com/sukanyagurav/Clipboard-landing-page"
+                    target="_blank"
+                  >
+                    <i
+                      class="fa-brands fa-square-github"
+                      aria-hidden="true"
+                    ></i>
+                  </a>
+                  <div
+                    class="card__technology"
+                    style="--quantity: 3; --width: 110px"
+                  >
+                    <span style="--position: 1">HTML</span>
+                    <span style="--position: 2">CSS</span>
+                    <span style="--position: 3">Animation</span>
+                  </div>
+                </div>
+              </li>
+              <li class="card see-more">
+                <a href="frontendMentor.html">
+                  <div class="circle">
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </div>
+                  <span>See More</span>
+                </a>
+              </li>
+            </ul>
+            <button
+              class="arrowBtn"
+              id="right"
+            >
+              <i
+                class="fa-solid fa-angle-right"
+                aria-hidden="true"
+              ></i>
+            </button>
           </div>
-          <div class="description">
-            <a href="https://sukanyagurav.github.io/Frontend-Mentor---Multi-step-form/" target="_blank" class="projectName">
-              Multi step form
-            </a>
-            <a href="https://github.com/sukanyagurav/Frontend-Mentor---Multi-step-form" target="_blank">
-                <i class="fa-brands fa-square-github" aria-hidden="true"></i>
-              </a>
-              <div class="card__technology" style="--quantity:4; --width:110px;">
-                <span style="--position:1">HTML</span>
-                <span style="--position:2">CSS</span>
-                <span style="--position:3">JavaScript</span>
-                <span style="--position:4">Animation</span>
-              </div>
-          </div>
-  
-      </li>
-      <li class="card">
-        <div class="project__image">
-          <img loading="lazy" src="./src/img/Projects/Room homepage.jpg" alt="" class="card_image">
         </div>
-        <div class="description">
-          <a href="https://sukanyagurav.github.io/Frontend-mentor-challenge-Room-homepage-coding-challenge/" target="_blank" class="projectName">
-            Room homepage landing page
-          </a>
-          <a href="https://github.com/sukanyagurav/Frontend-mentor-challenge-Room-homepage-coding-challenge/tree/main" target="_blank">
-              <i class="fa-brands fa-square-github" aria-hidden="true"></i>
-            </a>
-            <div class="card__technology" style="--quantity:4; --width:110px;">
-              <span style="--position:1">HTML</span>
-              <span style="--position:2">CSS</span>
-              <span style="--position:3">JavaScript</span>
-              <span style="--position:4">Animation</span>
-            </div>
-        </div>
-       
-      </li>
-     
-      <li class="card">
-
-        <div class="project__image">
-          <img loading="lazy" src="./src/img/Projects/Project 5.jpg" alt="" class="card_image">
-        </div>
-        <div class="description">
-          <a href="https://sukanyagurav.github.io/Chat-app-CSS-illustration/" target="_blank" class="projectName">
-            Chat app CSS illustration
-          </a>
-          <a href="https://github.com/sukanyagurav/Chat-app-CSS-illustration/tree/master" target="_blank">
-              <i class="fa-brands fa-square-github" aria-hidden="true"></i>
-            </a>
-            <div class="card__technology" style="--quantity:3; --width:110px;">
-              <span style="--position:1">HTML</span>
-              <span style="--position:2">CSS</span>
-              <span style="--position:3">Animation</span>
-            </div>
-        </div>
-    
-      </li>
-      <li class="card">
-        <div class="project__image">
-          <img loading="lazy" src="./src/img/Projects/Project 6.jpg" alt="" class="card_image">
-        </div>
-        <div class="description">
-          <a href="https://sukanyagurav.github.io/four-card-feature-section-master/" target="_blank" class="projectName">
-            Four card feature section
-          </a>
-          <a href="https://github.com/sukanyagurav/four-card-feature-section-master/tree/master" target="_blank">
-              <i class="fa-brands fa-square-github" aria-hidden="true"></i>
-            </a>
-            <div class="card__technology" style="--quantity:3; --width:110px;">
-              <span style="--position:1">HTML</span>
-              <span style="--position:2">CSS</span>
-              <span style="--position:3">Animation</span>
-            </div>
-        </div>
-      </li>
-      
-      <li class="card">
-        <div class="project__image">
-          <img loading="lazy" src="./src/img/Projects/readbooks.JPG" alt="" class="card_image">
-        </div>
-        <div class="description">
-          <a href="https://sukanyagurav.github.io/readbooks/" target="_blank" class="projectName">
-            Readbook landing page
-          </a>
-          <a href="https://github.com/sukanyagurav/readbooks/tree/master" target="_blank">
-              <i class="fa-brands fa-square-github" aria-hidden="true"></i>
-            </a>
-            <div class="card__technology" style="--quantity:3; --width:110px;">
-              <span style="--position:1">HTML</span>
-              <span style="--position:2">CSS</span>
-              <span style="--position:3">Animation</span>
-            </div>
-        </div>
-      </li>
-      <li class="card">
-        <div class="project__image">
-          <img loading="lazy" src="./src/img/Projects/Project 8.jpg" alt="" class="card_image">
-        </div>
-        <div class="description">
-          <a href="https://sukanyagurav.github.io/Clipboard-landing-page/" target="_blank" class="projectName">
-            Clipboard landing page
-          </a>
-          <a href="https://github.com/sukanyagurav/Clipboard-landing-page" target="_blank">
-              <i class="fa-brands fa-square-github" aria-hidden="true"></i>
-            </a>
-            <div class="card__technology" style="--quantity:3; --width:110px;">
-              <span style="--position:1">HTML</span>
-              <span style="--position:2">CSS</span>
-              <span style="--position:3">Animation</span>
-            </div>
-        </div>
-      </li>
-      <li class="card see-more">
-        <a href="frontendMentor.html">
-          <div class="circle">
-            <i class="fa-solid fa-arrow-right"></i>
-          </div>
-          <span>See More</span>
-        </a>
-      </li>
-      </ul>
-      <button class="arrowBtn" id="right">
-        <i class="fa-solid fa-angle-right" aria-hidden="true"></i>
-      </button>
-    </div>
-  </div>
-  </section>
-  <section id="skill" class="skills" >
-    <h2 class="skills-title">Skills</h2>
-    <div class="skills-contianer">
+      </section>
+      <section
+        id="skill"
+        class="skills"
+      >
+        <h2 class="skills-title">Skills</h2>
+        <div class="skills-contianer">
           <p class="skill">HTML</p>
           <p class="skill">CSS</p>
           <p class="skill">Javscript</p>
@@ -727,35 +1382,83 @@
           <p class="skill">Git</p>
           <p class="skill">Typescript</p>
           <p class="skill">SQL server</p>
-    </div>
-  </section>
-</main>
-  <footer>
+        </div>
+      </section>
+    </main>
+    <footer>
       <div class="contact-container">
-        <a href="mailto:sukanyagurav67@gmail.com" >
-          <i class="fa-solid fa-g" aria-hidden="true"></i>
+        <a href="mailto:sukanyagurav67@gmail.com">
+          <i
+            class="fa-solid fa-g"
+            aria-hidden="true"
+          ></i>
         </a>
-        <a href="https://github.com/sukanyagurav" target="_blank"><i class="fa-brands fa-github" aria-hidden="true"></i></a>
-        <a href="https://www.frontendmentor.io/profile/sukanyagurav" target="_blank"><svg version="1.0" xmlns="http://www.w3.org/2000/svg"
-          width="25.000000pt" height="25.000000pt" viewBox="0 0 25.000000 25.000000"
-          preserveAspectRatio="xMidYMid meet">
-
-         <g transform="translate(-4.000000,29.000000) scale(0.100000,-0.100000)"
-         fill="#000000" stroke="none">
-         <path d="M157 233 c-11 -10 -8 -103 3 -103 6 0 10 25 10 55 0 56 -1 60 -13 48z"/>
-         <path d="M213 197 c-29 -13 -29 -21 2 -35 14 -6 25 -8 25 -3 0 5 -6 12 -12 14
-         -10 4 -9 8 2 16 21 14 9 20 -17 8z"/>
-         <path d="M85 139 c19 -35 81 -67 98 -50 8 8 4 11 -15 11 -25 0 -78 40 -78 60
-         0 5 -5 10 -10 10 -6 0 -4 -13 5 -31z"/>
-         </g>
-         </svg></a>
-        <a href="https://www.linkedin.com/in/sukanya-gurav-frontend-developer/" target="_blank"><i aria-hidden="true" class="fa-brands fa-linkedin"></i></a>
+        <a
+          href="https://github.com/sukanyagurav"
+          target="_blank"
+          ><i
+            class="fa-brands fa-github"
+            aria-hidden="true"
+          ></i
+        ></a>
+        <a
+          href="https://www.frontendmentor.io/profile/sukanyagurav"
+          target="_blank"
+          ><svg
+            version="1.0"
+            xmlns="http://www.w3.org/2000/svg"
+            width="25.000000pt"
+            height="25.000000pt"
+            viewBox="0 0 25.000000 25.000000"
+            preserveAspectRatio="xMidYMid meet"
+          >
+            <g
+              transform="translate(-4.000000,29.000000) scale(0.100000,-0.100000)"
+              fill="#000000"
+              stroke="none"
+            >
+              <path
+                d="M157 233 c-11 -10 -8 -103 3 -103 6 0 10 25 10 55 0 56 -1 60 -13 48z"
+              />
+              <path
+                d="M213 197 c-29 -13 -29 -21 2 -35 14 -6 25 -8 25 -3 0 5 -6 12 -12 14
+         -10 4 -9 8 2 16 21 14 9 20 -17 8z"
+              />
+              <path
+                d="M85 139 c19 -35 81 -67 98 -50 8 8 4 11 -15 11 -25 0 -78 40 -78 60
+         0 5 -5 10 -10 10 -6 0 -4 -13 5 -31z"
+              />
+            </g></svg
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/sukanya-gurav-frontend-developer/"
+          target="_blank"
+          ><i
+            aria-hidden="true"
+            class="fa-brands fa-linkedin"
+          ></i
+        ></a>
       </div>
-      <p class="credit">Designed By Sukanya Gurav </p>
-  </footer>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/CSSRulePlugin.min.js" integrity="sha512-+35N1KBHwTDnFOBSqO2nm/qsf5okaS74sUZu/rT/wlvuAfJ1hrAoGlWZip2l1LHB1q2i8B2k84Pb/NrC38bv8Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="./script.js"> </script>
+      <p class="credit">Designed By Sukanya Gurav</p>
+    </footer>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+      integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/CSSRulePlugin.min.js"
+      integrity="sha512-+35N1KBHwTDnFOBSqO2nm/qsf5okaS74sUZu/rT/wlvuAfJ1hrAoGlWZip2l1LHB1q2i8B2k84Pb/NrC38bv8Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
+      integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./script.js"></script>
   </body>
 </html>
