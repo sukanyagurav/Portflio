@@ -24,17 +24,19 @@ window.addEventListener("scroll", activeLink);
 function activeLink(){
     const scrollY = window.pageYOffset
     sections.forEach(current=>{
-        const sectionHeight= current.offsetHeight,
-        sectionTop= current.offsetTop- 58,
-        
-        sectionId=current.getAttribute('id'),
-        sectionClass=document.querySelector('#menu-toggler  a[href*='+sectionId + ']')
-        if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
-            sectionClass.classList.add('active-link')
-        }
-        else{
-            sectionClass.classList.remove('active-link')
-        }
+        const sectionHeight = current.offsetHeight;
+        const sectionTop = current.offsetTop - 58;
+        const sectionBottom = sectionTop + sectionHeight;
+        const sectionId = current.getAttribute('id');
+        // target the nav inside header to avoid matching the checkbox with same id
+        const sectionClass = document.querySelector(`#header nav a[href="#${sectionId}"]`);
+
+        if(sectionClass){
+            if(scrollY >= sectionTop && scrollY < sectionBottom){
+                sectionClass.classList.add('active-link');
+            } else {
+                sectionClass.classList.remove('active-link');
+            }}
     })
 }
 //carousel 

@@ -133,11 +133,10 @@
     .hero{
         flex-direction: row; 
         gap:2rem;
-        margin-bottom: 2rem;
     }
     .hero-content{
         padding: 50px 20px;
-
+        max-width: 700px;
     }
     .downloadCV::before{
         inset:-60px;
